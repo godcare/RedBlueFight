@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainMenu" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="BG" anchorOffsetX="0" anchorOffsetY="0" fillMode="scale" width="750" height="1334" scaleX="1" scaleY="1" x="0" y="0" visible="true" cacheAsBitmap="true" source="Common_BG_png"/>
+	<e:Label id="LBTitle" text="红蓝大测试！！！" y="286" anchorOffsetX="0" width="430" anchorOffsetY="0" height="94" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="48" horizontalCenter="0" textColor="0x000eff" bold="true"/>
+	<e:Image id="btn0" source="box_png" scale9Grid="35,33,65,69" fillMode="clip" width="247" height="100" x="250.67" bottom="722" touchEnabled="true"/>
+	<e:Label id="LBTitle0" text="顶翻小胖子" y="520.84" anchorOffsetX="0" width="224.33" anchorOffsetY="0" height="82.33" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="28" horizontalCenter="-1" textColor="0x050505" bold="true" touchEnabled="true"/>
+	<e:Image id="btn1" source="box_png" scale9Grid="35,33,65,69" fillMode="clip" width="247" height="100" x="250.67" bottom="579" touchEnabled="true"/>
+	<e:Label id="LBTitle1" text="试管排排压" y="663.84" anchorOffsetX="0" width="224.33" anchorOffsetY="0" height="82.33" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="28" horizontalCenter="-1" textColor="0x050505" bold="true" touchEnabled="true"/>
+</e:Skin>

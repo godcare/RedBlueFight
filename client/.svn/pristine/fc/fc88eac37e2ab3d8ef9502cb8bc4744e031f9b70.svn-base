@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PushGameSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1653ee4744f" ></w:Config>
+	<e:Image id="BG" source="Common_BG_png" anchorOffsetY="0" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="RedBall" source="PushOut_Ball_1_0_png" smoothing="true" touchEnabled="true" scaleX="0.5" scaleY="0.5" anchorOffsetX="512" anchorOffsetY="512" x="375" y="1466"/>
+	<e:Image id="BlueBall" source="PushOut_Ball_2_0_png" anchorOffsetX="512" scaleX="0.5" touchEnabled="true" smoothing="true" skewX="0" skewY="0" scaleY="0.5" anchorOffsetY="512" x="377" y="-150.1"/>
+	<e:Group id="RedOver" width="200" height="200" anchorOffsetX="100" anchorOffsetY="100" x="267" y="1450">
+		<e:Image id="RedOverPanel" x="0" y="0" source="box_png" anchorOffsetX="0" scale9Grid="36,36,65,66" width="420" anchorOffsetY="0" height="208" scaleX="1" scaleY="1"/>
+		<e:Image id="RedMenu" source="UI_MainButton_0_png" x="236" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+		<e:Image id="RedRetry" source="UI_StartOverButton_0_png" x="31" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+	</e:Group>
+	<e:Group id="BlueOver" width="200" height="200" anchorOffsetX="100" anchorOffsetY="100" x="267" y="-150">
+		<e:Image id="BlueOverPanel" x="0" y="0" source="box_png" anchorOffsetX="0" scale9Grid="36,36,65,66" width="420" anchorOffsetY="0" height="208" scaleX="1" scaleY="1"/>
+		<e:Image id="BlueMenu" source="UI_MainButton_0_png" x="181.24" y="174.88" width="150" height="150" scaleX="1" scaleY="1" rotation="179.91" touchEnabled="true"/>
+		<e:Image id="BlueRetry" source="UI_StartOverButton_0_png" x="372.66999999999996" y="174.91000000000003" width="150" height="150" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" rotation="180.01" touchEnabled="true"/>
+	</e:Group>
+</e:Skin>

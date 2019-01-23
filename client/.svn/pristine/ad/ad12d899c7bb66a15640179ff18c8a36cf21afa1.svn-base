@@ -1,0 +1,268 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game9/Game9Control.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'dc35aeNgglPbKxgxIVflmS3', 'Game9Control', __filename);
+// Scripts/Control/Games/Game9/Game9Control.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        RedOpBtns: {
+            default: [],
+            type: [cc.Node]
+        },
+        BlueOpBtns: {
+            default: [],
+            type: [cc.Node]
+        },
+        coinSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        sFlag: 1,
+        sSpeed: 0.1,
+        minSpeed: 0,
+        isAnimation: false,
+        Coin: {
+            default: null,
+            type: cc.Node
+        },
+        TopZ: //top render btn
+        {
+            default: null,
+            type: cc.Node
+        },
+        coinIndex: 0,
+        stopTimes: 8,
+        stopIndex: 0,
+        isStopping: false,
+        slowSpeed: 0,
+        result: "",
+        GameStatus: 0 //0未开始，1开始了，2结束了
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        this.startAnimation();
+        // cc.log(this.Coin.scaleX);
+    },
+    startAnimation: function startAnimation() {
+        for (var i = 0; i < 2; i++) {
+            this.RedOpBtns[i].getComponent(cc.Button).enabled = false;
+            this.BlueOpBtns[i].getComponent(cc.Button).enabled = false;
+            this.RedOpBtns[i].opacity = 120;
+            this.BlueOpBtns[i].opacity = 120;
+        }
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+            for (var i = 0; i < 2; i++) {
+                this.RedOpBtns[i].getComponent(cc.Button).enabled = true;
+                this.BlueOpBtns[i].getComponent(cc.Button).enabled = true;
+                this.RedOpBtns[i].opacity = 255;
+                this.BlueOpBtns[i].opacity = 255;
+                this.startRotate();
+            }
+        }, 4.5);
+    },
+    update: function update(dt) {
+        if (this.GameStatus == 1 && this.isAnimation) {
+            if (this.Coin.scaleX >= -1 && this.Coin.scaleY <= 1) {
+                var preX = this.Coin.scaleX;
+                this.Coin.scaleX += dt * this.sFlag * this.sSpeed;
+                if (this.Coin.scaleX <= -1) {
+                    this.Coin.scaleX = -1;
+                    this.sFlag *= -1;
+                    if (this.stopIndex > this.stopTimes) {
+                        this.isStopping = false;
+                        this.isAnimation = false;
+                        this.checkResult();
+                    }
+                } else if (this.Coin.scaleX >= 1) {
+                    this.Coin.scaleX = 1;
+                    this.sFlag *= -1;
+                    if (this.stopIndex > this.stopTimes) {
+                        this.isStopping = false;
+                        this.isAnimation = false;
+                        this.checkResult();
+                    }
+                }
+                if (preX * this.Coin.scaleX <= 0 && preX != 0) {
+                    if (this.sFlag == 1) {
+                        this.Coin.getComponent(cc.Sprite).spriteFrame = this.coinSprites[0];
+                        this.coinIndex = 0;
+                    } else {
+                        this.Coin.getComponent(cc.Sprite).spriteFrame = this.coinSprites[1];
+                        this.coinIndex = 1;
+                    }
+                    if (this.isStopping) {
+                        this.sSpeed -= this.slowSpeed;
+                        this.stopIndex += 1;
+                    }
+                }
+            }
+        }
+    },
+    onBtnClick: function onBtnClick(event, customEventData) {
+        this.result = customEventData.toString();
+        for (var i = 0; i < 2; i++) {
+            this.RedOpBtns[i].getComponent(cc.Button).enabled = false;
+            this.BlueOpBtns[i].getComponent(cc.Button).enabled = false;
+            // this.RedOpBtns[i].opacity = 120;
+            // this.BlueOpBtns[i].opacity = 120;
+            var rma = cc.moveTo(0.5, 0, this.RedOpBtns[i].y);
+            var bma = cc.moveTo(0.5, 0, this.BlueOpBtns[i].y);
+            this.RedOpBtns[i].runAction(rma);
+            this.BlueOpBtns[i].runAction(bma);
+        }
+        this.stopRotateLagacy();
+        switch (customEventData.toString()) {
+            case "rf":
+                this.scheduleOnce(function () {
+                    cc.find("Canvas/GameCore/btnRedBack").active = false;
+                    cc.find("Canvas/GameCore/btnBlueFace").active = false;
+                }, 0.5);
+                break;
+            case "rb":
+                this.scheduleOnce(function () {
+                    cc.find("Canvas/GameCore/btnRedFace").active = false;
+                    cc.find("Canvas/GameCore/btnBlueBack").active = false;
+                }, 0.5);
+                break;
+            case "bf":
+                this.scheduleOnce(function () {
+                    cc.find("Canvas/GameCore/btnRedFace").active = false;
+                    cc.find("Canvas/GameCore/btnBlueBack").active = false;
+                }, 0.5);
+                break;
+            case "bb":
+                this.scheduleOnce(function () {
+                    cc.find("Canvas/GameCore/btnRedBack").active = false;
+                    cc.find("Canvas/GameCore/btnBlueFace").active = false;
+                }, 0.5);
+                break;
+        }
+    },
+    startRotate: function startRotate() {
+        this.isAnimation = true;
+    },
+    stopRotateLagacy: function stopRotateLagacy() {
+        this.isStopping = true;
+        this.slowSpeed = (this.sSpeed - this.minSpeed) / this.stopTimes;
+    },
+    checkResult: function checkResult() {
+        this.GameStatus = 2;
+        switch (this.result) {
+            case "rf":
+            case "bb":
+                if (this.coinIndex == 0) {
+                    // red win
+                    this.schedule(function () {
+                        cc.find("Canvas/GameCore/btnRedFace").active = !cc.find("Canvas/GameCore/btnRedFace").active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 0;
+                        this.GameResultNode.active = true;
+                        this.SoundMGR.playOver();
+                    }, 2);
+                } else {
+                    // blue win
+                    this.schedule(function () {
+                        cc.find("Canvas/GameCore/btnBlueBack").active = !cc.find("Canvas/GameCore/btnBlueBack").active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 1;
+                        this.GameResultNode.active = true;
+                        this.SoundMGR.playOver();
+                    }, 2);
+                }
+                break;
+            case "rb":
+            case "bf":
+                if (this.coinIndex == 0) {
+                    // blue win
+                    this.schedule(function () {
+                        cc.find("Canvas/GameCore/btnBlueFace").active = !cc.find("Canvas/GameCore/btnBlueFace").active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 1;
+                        this.GameResultNode.active = true;
+                        this.SoundMGR.playOver();
+                    }, 2);
+                } else {
+                    // red win
+                    this.schedule(function () {
+                        cc.find("Canvas/GameCore/btnRedBack").active = !cc.find("Canvas/GameCore/btnRedBack").active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 0;
+                        this.GameResultNode.active = true;
+                        this.SoundMGR.playOver();
+                    }, 2);
+                }
+                break;
+        }
+    }
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game9Control.js.map
+        

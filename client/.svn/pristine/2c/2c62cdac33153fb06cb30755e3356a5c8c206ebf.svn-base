@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pad",
+    "texture": "6513afa6-d96a-416d-8742-63b8b28c7b08",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      148,
+      121
+    ],
+    "offset": [
+      0,
+      16.5
+    ],
+    "originalSize": [
+      148,
+      154
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

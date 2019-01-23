@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "grid_1",
+    "texture": "a5f6561e-0dd6-4dd3-b905-2564b2f2adbc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      540,
+      404
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      540,
+      404
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

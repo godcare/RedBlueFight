@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Board_1",
+    "texture": "89de03ec-fb61-4f62-b4c5-e0e1db52eeb8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      637
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      768,
+      637
+    ]
+  }
+}

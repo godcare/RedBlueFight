@@ -1,0 +1,260 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,description_json,Space_TestTube_png,Space_Shelf_png,Space_Button_2_1_png,Space_Button_2_0_png,Space_Button_1_1_png,Space_Button_1_0_png,PushOut_Ball_2_2_png,PushOut_Ball_2_1_png,PushOut_Ball_2_0_png,PushOut_Ball_1_2_png,PushOut_Ball_1_1_png,PushOut_Ball_1_0_png,Common_BG_png,UI_MainButton_0_png,UI_MainButton_1_png,UI_StartOverButton_0_png,UI_StartOverButton_1_png,box_png,UI_ReadyNumber_1_3_png,UI_ReadyNumber_1_2_png,UI_ReadyNumber_1_1_png,UI_ReadyNumber_1_0_png,UI_ReadyNumber_0_3_png,UI_ReadyNumber_0_2_png,UI_ReadyNumber_0_1_png,UI_ReadyNumber_0_0_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "Images/Space_TestTube.png",
+			"type": "image",
+			"name": "Space_TestTube_png"
+		},
+		{
+			"url": "Images/Space_Shelf.png",
+			"type": "image",
+			"name": "Space_Shelf_png"
+		},
+		{
+			"url": "Images/Space_Button_2_1.png",
+			"type": "image",
+			"name": "Space_Button_2_1_png"
+		},
+		{
+			"url": "Images/Space_Button_2_0.png",
+			"type": "image",
+			"name": "Space_Button_2_0_png"
+		},
+		{
+			"url": "Images/Space_Button_1_1.png",
+			"type": "image",
+			"name": "Space_Button_1_1_png"
+		},
+		{
+			"url": "Images/Space_Button_1_0.png",
+			"type": "image",
+			"name": "Space_Button_1_0_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_2_2.png",
+			"type": "image",
+			"name": "PushOut_Ball_2_2_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_2_1.png",
+			"type": "image",
+			"name": "PushOut_Ball_2_1_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_2_0.png",
+			"type": "image",
+			"name": "PushOut_Ball_2_0_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_1_2.png",
+			"type": "image",
+			"name": "PushOut_Ball_1_2_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_1_1.png",
+			"type": "image",
+			"name": "PushOut_Ball_1_1_png"
+		},
+		{
+			"url": "Images/PushOut_Ball_1_0.png",
+			"type": "image",
+			"name": "PushOut_Ball_1_0_png"
+		},
+		{
+			"url": "Images/Common_BG.png",
+			"type": "image",
+			"name": "Common_BG_png"
+		},
+		{
+			"url": "Images/UI_StartOverButton_1.png",
+			"type": "image",
+			"name": "UI_StartOverButton_1_png"
+		},
+		{
+			"url": "Images/UI_StartOverButton_0.png",
+			"type": "image",
+			"name": "UI_StartOverButton_0_png"
+		},
+		{
+			"url": "Images/UI_MainButton_1.png",
+			"type": "image",
+			"name": "UI_MainButton_1_png"
+		},
+		{
+			"url": "Images/UI_MainButton_0.png",
+			"type": "image",
+			"name": "UI_MainButton_0_png"
+		},
+		{
+			"url": "Images/box.png",
+			"type": "image",
+			"name": "box_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_0_0.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_0_0_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_0_1.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_0_1_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_0_2.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_0_2_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_0_3.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_0_3_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_1_0.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_1_0_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_1_1.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_1_1_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_1_2.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_1_2_png"
+		},
+		{
+			"url": "Images/UI_ReadyNumber_1_3.png",
+			"type": "image",
+			"name": "UI_ReadyNumber_1_3_png"
+		}
+	]
+}

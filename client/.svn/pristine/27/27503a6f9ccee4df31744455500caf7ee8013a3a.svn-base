@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "HighStack_Bottle_2",
+    "texture": "bfdfb0b2-a6c8-45b2-97b8-ad0eda083f03",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      117,
+      117
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      117,
+      117
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

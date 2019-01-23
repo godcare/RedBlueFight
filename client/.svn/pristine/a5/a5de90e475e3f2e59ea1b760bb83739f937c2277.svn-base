@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Blue_Dot_0",
+    "texture": "4ec94d6e-097b-48a5-ad9e-07f8ae3c34f2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      116,
+      116
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      116,
+      116
+    ]
+  }
+}

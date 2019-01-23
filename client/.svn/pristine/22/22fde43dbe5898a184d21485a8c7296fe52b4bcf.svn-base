@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ShootBasket_Glass_Red",
+    "texture": "a2c821c5-b1b8-4ec8-a98f-5d0460ec8c30",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      183
+    ],
+    "offset": [
+      0,
+      164.5
+    ],
+    "originalSize": [
+      768,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

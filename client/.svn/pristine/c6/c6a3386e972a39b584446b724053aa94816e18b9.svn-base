@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_choose_game_current_page_indicator",
+    "texture": "d7f628bc-1b2f-46b2-adc1-5f64c25202cf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      13,
+      13
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      13,
+      13
+    ]
+  }
+}

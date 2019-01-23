@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "UI_Progress_Clock",
+    "texture": "44ead1dd-4ecb-420a-aa71-e4e6369bb397",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      46,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      46,
+      51
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

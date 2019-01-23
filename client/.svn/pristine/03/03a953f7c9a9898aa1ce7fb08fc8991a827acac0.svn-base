@@ -1,0 +1,1666 @@
+2018-10-26T06:53:07.438Z - normal: Load ~/.CocosCreator/settings.json
+2018-10-26T06:53:07.445Z - normal: checking language setting...
+2018-10-26T06:53:07.446Z - normal: Language: zh
+2018-10-26T06:53:09.644Z - success: protocol editor-framework registered
+2018-10-26T06:53:09.644Z - success: protocol app registered
+2018-10-26T06:53:09.644Z - success: protocol theme registered
+2018-10-26T06:53:09.644Z - success: protocol packages registered
+2018-10-26T06:53:09.644Z - success: protocol unpack registerred
+2018-10-26T06:53:09.644Z - success: protocol disable-commonjs registerred
+2018-10-26T06:53:09.817Z - normal: connected!
+2018-10-26T06:53:09.820Z - normal: Check project F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T06:53:09.828Z - normal: Initializing project F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T06:53:10.095Z - normal: Initializing Cocos2d
+2018-10-26T06:53:15.198Z - normal: Initializing Asset Database
+2018-10-26T06:53:15.391Z - success: protocol uuid registerred
+2018-10-26T06:53:15.391Z - success: protocol db registerred
+2018-10-26T06:53:15.391Z - success: protocol thumbnail registerred
+2018-10-26T06:53:15.391Z - normal: Loading editor/builtin packages
+2018-10-26T06:53:16.022Z - success: assets loaded
+2018-10-26T06:53:16.026Z - success: builder loaded
+2018-10-26T06:53:16.030Z - success: cocos-analytics loaded
+2018-10-26T06:53:16.059Z - success: console loaded
+2018-10-26T06:53:16.170Z - success: fb-instant-games loaded
+2018-10-26T06:53:16.209Z - success: hierarchy loaded
+2018-10-26T06:53:16.214Z - success: inspector loaded
+2018-10-26T06:53:16.216Z - success: keystore loaded
+2018-10-26T06:53:16.224Z - success: node-library loaded
+2018-10-26T06:53:16.227Z - success: package-asset loaded
+2018-10-26T06:53:16.229Z - success: preferences loaded
+2018-10-26T06:53:16.231Z - success: project-exporter loaded
+2018-10-26T06:53:16.258Z - success: project-importer loaded
+2018-10-26T06:53:16.261Z - success: project-settings loaded
+2018-10-26T06:53:16.270Z - success: ui-kit loaded
+2018-10-26T06:53:16.275Z - success: scene loaded
+2018-10-26T06:53:16.278Z - success: sprite-editor loaded
+2018-10-26T06:53:16.296Z - success: store loaded
+2018-10-26T06:53:16.318Z - success: timeline loaded
+2018-10-26T06:53:16.319Z - normal: Loading builtin packages
+2018-10-26T06:53:16.406Z - success: asset-db-debugger loaded
+2018-10-26T06:53:16.447Z - success: code-editor loaded
+2018-10-26T06:53:16.454Z - success: color-picker loaded
+2018-10-26T06:53:16.463Z - success: jsb-adapter loaded
+2018-10-26T06:53:16.503Z - success: package-manager loaded
+2018-10-26T06:53:17.594Z - success: qqplay-adapter loaded
+2018-10-26T06:53:17.690Z - success: sdkbox loaded
+2018-10-26T06:53:17.734Z - success: tester loaded
+2018-10-26T06:53:17.844Z - success: ui-grid loaded
+2018-10-26T06:53:17.907Z - success: ui-kit-preview-extra loaded
+2018-10-26T06:53:17.944Z - success: ui-kit-preview loaded
+2018-10-26T06:53:18.008Z - success: ui-tree loaded
+2018-10-26T06:53:18.017Z - success: weapp-adapter loaded
+2018-10-26T06:53:21.731Z - normal: Loading packages
+2018-10-26T06:53:21.751Z - normal: Watching packages
+2018-10-26T06:53:22.949Z - normal: Run Application
+2018-10-26T06:53:40.619Z - success: preview server running at http://localhost:7456
+2018-10-26T06:58:47.293Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T06:58:47.298Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T06:58:47.298Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T06:58:58.337Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T06:59:08.234Z - normal: Start building assets
+2018-10-26T06:59:08.234Z - normal: Start spawn build-worker
+2018-10-26T06:59:09.604Z - normal: Finish spawn build-worker
+2018-10-26T06:59:09.604Z - normal: Start init build-worker
+2018-10-26T06:59:17.425Z - normal: Finish init build-worker
+2018-10-26T06:59:17.425Z - normal: Start build-assets in worker
+2018-10-26T06:59:25.217Z - normal: Finish build-assets in worker
+2018-10-26T06:59:25.241Z - normal: Finish building assets
+2018-10-26T06:59:25.760Z - normal: Start building plugin scripts
+2018-10-26T06:59:25.816Z - normal: Generating main.js from E:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-26T06:59:28.240Z - normal: Built to "F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame" successfully
+2018-10-26T06:59:38.925Z - normal: Initializing...
+
+2018-10-26T06:59:38.938Z - normal: idePortFile: C:\Users\zhuyunqi\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-10-26T06:59:40.000Z - normal: starting ide...
+
+2018-10-26T07:00:09.329Z - normal: IDE server has started, listening on http://127.0.0.1:36637
+
+2018-10-26T07:00:09.401Z - normal: initialization finished
+
+2018-10-26T07:00:10.834Z - normal: open IDE success
+
+2018-10-26T07:47:24.560Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-10-26T07:47:24.562Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 948.00
+2018-10-26T07:47:24.562Z - normal: Simulator: FRAME SCALE = 0.75
+2018-10-26T07:47:27.206Z - normal: Simulator: Ready for GLSL
+2018-10-26T07:47:27.206Z - normal: Simulator: Ready for OpenGL 2.0
+2018-10-26T07:47:27.207Z - normal: Simulator: Project Config:
+2018-10-26T07:47:27.208Z - normal: Simulator:     project dir: E:\Cocos Creator 202\CocosCreator\resources\cocos2d-x\simulator\win32\
+2018-10-26T07:47:27.208Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-10-26T07:47:27.208Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-10-26T07:47:27.208Z - normal: Simulator:     frame size: 640 x 960
+2018-10-26T07:47:27.208Z - normal: Simulator:     frame scale: 0.75
+2018-10-26T07:47:27.208Z - normal: Simulator:     show console: NO
+2018-10-26T07:47:27.209Z - normal: Simulator:     write debug log: NO ()
+2018-10-26T07:47:27.209Z - normal: Simulator:     listen: 
+2018-10-26T07:47:27.209Z - normal: Simulator:     debugger: none
+2018-10-26T07:47:27.209Z - normal: Simulator:     add searching path:
+2018-10-26T07:47:27.210Z - normal: Simulator: 
+2018-10-26T07:47:27.210Z - normal: Simulator: 
+2018-10-26T07:47:27.210Z - normal: Simulator: 
+2018-10-26T07:47:27.210Z - normal: Simulator: resetDesignResolution request
+2018-10-26T07:47:27.210Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:47:27.210Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2018-10-26T07:47:27.211Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:47:27.211Z - normal: Simulator: D/jswrapper (368): Initializing V8, version: 6.0.286.52
+2018-10-26T07:47:27.211Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-10-26T07:47:27.211Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-10-26T07:47:27.212Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-10-26T07:47:27.212Z - normal: Simulator: D/jswrapper (129): JS: Enable batch GL commands optimization!
+2018-10-26T07:47:27.212Z - normal: Simulator: resetDesignResolution request
+2018-10-26T07:47:27.212Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:47:27.212Z - normal: Simulator: LOAD Js FILE: main.js
+2018-10-26T07:47:27.212Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:47:27.257Z - normal: Simulator: iShow!
+2018-10-26T07:47:27.542Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8b4c
+2018-10-26T07:47:27.542Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8869
+2018-10-26T07:47:27.561Z - normal: Simulator: D/jswrapper (129): JS: Cocos Creator v2.0.2
+2018-10-26T07:47:27.989Z - normal: Simulator: D/jswrapper (129): JS: Create GameData
+2018-10-26T07:47:27.990Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.990Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.991Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.991Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.991Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.992Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.992Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:27.993Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:47:29.526Z - normal: Simulator: D/jswrapper (129): JS: calledBall
+2018-10-26T07:47:34.188Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 1ab7cb57-20a8-466a-ba2d-ba7c718df066: 386.8649999999998ms
+2018-10-26T07:47:34.441Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T07:47:34.441Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:47:34.441Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:47:34.441Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:47:34.442Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:47:34.442Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:47:34.443Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:47:34.443Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:47:36.108Z - normal: Simulator: D/jswrapper (129): JS: 0
+2018-10-26T07:47:36.109Z - normal: Simulator: D/jswrapper (129): JS: Game0In
+2018-10-26T07:47:36.110Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:47:36.110Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:47:36.111Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:47:36.111Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:47:36.111Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:47:36.123Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:47:36.123Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:47:36.394Z - normal: Simulator: D/jswrapper (129): JS: Game0In
+2018-10-26T07:47:36.395Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:47:36.396Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:47:36.396Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:47:36.396Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:47:36.396Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:47:36.396Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:47:36.405Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:47:38.438Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e: 161.95299999999952ms
+2018-10-26T07:47:38.452Z - normal: Simulator: D/jswrapper (129): JS: Start
+2018-10-26T07:47:45.307Z - error: Simulator: libpng warning: iCCP: known incorrect sRGB profile
+E/jswrapper (271): ERROR: Uncaught TypeError: Cannot read property 'destroy' of null, location: assets/Scripts/Control/Games/Common/PauseControl.js:0:0
+STACK:
+[0]OnResumeClick@assets/Scripts/Control/Games/Common/PauseControl.js:88
+[1]emit@src/cocos2d-jsb.js:12962
+[2]emitEvents@src/cocos2d-jsb.js:12947
+[3]_onTouchEnded@src/cocos2d-jsb.js:12562
+[4]170.CallbacksInvoker.invoke@src/cocos2d-jsb.js:27880
+[5]_doDispatchEvent@src/cocos2d-jsb.js:7666
+[6]dispatchEvent@src/cocos2d-jsb.js:8287
+[7]_touchEndHandler@src/cocos2d-jsb.js:7558
+[8]_onTouchEventCallback@src/cocos2d-jsb.js:19098
+[9]_dispatchEventToListeners@src/cocos2d-jsb.js:19182
+[10]_dispatchTouchEvent@src/cocos2d-jsb.js:19131
+[11]dispatchEvent@src/cocos2d-jsb.js:19404
+[12]handleTouchesEnd@src/cocos2d-jsb.js:25938
+[13]anonymous@src/cocos2d-jsb.js:26124
+[14]anonymous@src/cocos2d-jsb.js:26144
+[15]dispatchEvent@jsb-adapter/jsb-builtin.js:2809
+[16]anonymous@jsb-adapter/jsb-builtin.js:2880
+E/jswrapper (521): [ERROR] (..\cocos\scripting\js-bindings\jswrapper\v8\Object.cpp, 521): Invoking function (115F9918) failed!
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T07:47:48.770Z - normal: Simulator: D/jswrapper (452): ScriptEngine::cleanup begin ...
+2018-10-26T07:47:48.771Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 105, all objects: 169
+2018-10-26T07:47:48.919Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 90, all objects: 154
+2018-10-26T07:47:48.919Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 90, all objects: 154
+2018-10-26T07:47:49.006Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 90, all objects: 154
+2018-10-26T07:47:49.006Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (3) by GC
+2018-10-26T07:47:49.007Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (40) by GC
+2018-10-26T07:47:49.007Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (1) by GC
+2018-10-26T07:47:49.029Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (26) by GC
+2018-10-26T07:47:49.089Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (2) by GC
+2018-10-26T07:47:49.089Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (4) by GC
+2018-10-26T07:47:49.089Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (27) by GC
+2018-10-26T07:47:49.089Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (1) by GC
+2018-10-26T07:47:49.089Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (91) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (2) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (42) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (39) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (3) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (12) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (8) by GC
+2018-10-26T07:47:49.090Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (4) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (5) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (6) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (7) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (45) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (9) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (46) by GC
+2018-10-26T07:47:49.091Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (41) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (3) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (32) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (31) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (11) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (78) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (15) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (13) by GC
+2018-10-26T07:47:49.092Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (14) by GC
+2018-10-26T07:47:49.093Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (44) by GC
+2018-10-26T07:47:49.093Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (22) by GC
+2018-10-26T07:47:49.122Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (73) by GC
+2018-10-26T07:47:49.167Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (28) by GC
+2018-10-26T07:47:49.167Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (24) by GC
+2018-10-26T07:47:49.167Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (77) by GC
+2018-10-26T07:47:49.167Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (16) by GC
+2018-10-26T07:47:49.170Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (17) by GC
+2018-10-26T07:47:49.170Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (38) by GC
+2018-10-26T07:47:49.170Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (37) by GC
+2018-10-26T07:47:49.171Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (36) by GC
+2018-10-26T07:47:49.171Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (29) by GC
+2018-10-26T07:47:49.174Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (18) by GC
+2018-10-26T07:47:49.174Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (30) by GC
+2018-10-26T07:47:49.174Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (7) by GC
+2018-10-26T07:47:49.175Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (20) by GC
+2018-10-26T07:47:49.175Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (19) by GC
+2018-10-26T07:47:49.175Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (21) by GC
+2018-10-26T07:47:49.175Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (25) by GC
+2018-10-26T07:47:49.176Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (23) by GC
+2018-10-26T07:47:49.176Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (76) by GC
+2018-10-26T07:47:49.178Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (33) by GC
+2018-10-26T07:47:49.179Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (34) by GC
+2018-10-26T07:47:49.179Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (35) by GC
+2018-10-26T07:47:49.180Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (43) by GC
+2018-10-26T07:47:49.181Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (47) by GC
+2018-10-26T07:47:49.182Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (70) by GC
+2018-10-26T07:47:49.182Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (71) by GC
+2018-10-26T07:47:49.182Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (72) by GC
+2018-10-26T07:47:49.184Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (74) by GC
+2018-10-26T07:47:49.184Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (75) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (79) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (80) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (81) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (82) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (83) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (84) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (85) by GC
+2018-10-26T07:47:49.185Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (86) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (87) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (88) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (89) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (90) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (92) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (93) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (94) by GC
+2018-10-26T07:47:49.186Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (10) by GC
+2018-10-26T07:47:49.235Z - normal: Simulator: D/jswrapper (297): Destroy WebGLFramebuffer (1) by GC
+2018-10-26T07:47:49.238Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (5) by GC
+2018-10-26T07:47:49.250Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (6) by GC
+2018-10-26T07:47:49.268Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (8) by GC
+2018-10-26T07:47:49.269Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (6) by GC
+2018-10-26T07:47:49.270Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-10-26T07:47:49.305Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 0, all objects: 0
+2018-10-26T07:47:49.360Z - normal: Simulator: D/jswrapper (515): ScriptEngine::cleanup end ...
+2018-10-26T07:47:50.695Z - error: Simulator: 
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 4032 differs from given gapless sample count -576. Frankenstein stream?
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T07:48:08.094Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-10-26T07:48:08.098Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 948.00
+2018-10-26T07:48:08.099Z - normal: Simulator: FRAME SCALE = 0.75
+2018-10-26T07:48:10.742Z - normal: Simulator: Ready for GLSL
+2018-10-26T07:48:10.742Z - normal: Simulator: Ready for OpenGL 2.0
+2018-10-26T07:48:10.742Z - normal: Simulator: Project Config:
+2018-10-26T07:48:10.743Z - normal: Simulator:     project dir: E:\Cocos Creator 202\CocosCreator\resources\cocos2d-x\simulator\win32\
+2018-10-26T07:48:10.743Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-10-26T07:48:10.743Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-10-26T07:48:10.743Z - normal: Simulator:     frame size: 640 x 960
+2018-10-26T07:48:10.743Z - normal: Simulator:     frame scale: 0.75
+2018-10-26T07:48:10.743Z - normal: Simulator:     show console: NO
+2018-10-26T07:48:10.743Z - normal: Simulator:     write debug log: NO ()
+2018-10-26T07:48:10.743Z - normal: Simulator:     listen: 
+2018-10-26T07:48:10.744Z - normal: Simulator:     debugger: none
+2018-10-26T07:48:10.744Z - normal: Simulator:     add searching path:
+2018-10-26T07:48:10.744Z - normal: Simulator: 
+2018-10-26T07:48:10.744Z - normal: Simulator: 
+2018-10-26T07:48:10.744Z - normal: Simulator: 
+2018-10-26T07:48:10.744Z - normal: Simulator: resetDesignResolution request
+2018-10-26T07:48:10.745Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:48:10.745Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2018-10-26T07:48:10.745Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:48:10.745Z - normal: Simulator: D/jswrapper (368): Initializing V8, version: 6.0.286.52
+2018-10-26T07:48:10.746Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-10-26T07:48:10.746Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-10-26T07:48:10.746Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-10-26T07:48:10.746Z - normal: Simulator: D/jswrapper (129): JS: Enable batch GL commands optimization!
+2018-10-26T07:48:10.746Z - normal: Simulator: resetDesignResolution request
+2018-10-26T07:48:10.747Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:48:10.748Z - normal: Simulator: LOAD Js FILE: main.js
+2018-10-26T07:48:10.748Z - normal: Simulator: ------------------------------------------------
+2018-10-26T07:48:10.748Z - normal: Simulator: iShow!
+2018-10-26T07:48:11.056Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8b4c
+2018-10-26T07:48:11.056Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8869
+2018-10-26T07:48:11.089Z - normal: Simulator: D/jswrapper (129): JS: Cocos Creator v2.0.2
+2018-10-26T07:48:11.610Z - normal: Simulator: D/jswrapper (129): JS: Create GameData
+2018-10-26T07:48:11.613Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.619Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.619Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.620Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.620Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.620Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.620Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:11.621Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T07:48:13.150Z - normal: Simulator: D/jswrapper (129): JS: calledBall
+2018-10-26T07:48:17.630Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 1ab7cb57-20a8-466a-ba2d-ba7c718df066: 212.89800000000014ms
+2018-10-26T07:48:17.757Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T07:48:17.757Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:48:17.758Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:48:17.758Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:48:17.760Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:48:17.760Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:48:17.760Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:48:17.761Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:48:19.341Z - normal: Simulator: D/jswrapper (129): JS: 0
+2018-10-26T07:48:19.349Z - normal: Simulator: D/jswrapper (129): JS: Game0In
+2018-10-26T07:48:19.349Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:48:19.349Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:48:19.349Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:48:19.350Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:48:19.351Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:48:19.351Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:48:19.351Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:48:19.798Z - normal: Simulator: D/jswrapper (129): JS: Game0In
+2018-10-26T07:48:19.798Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:48:19.799Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:48:19.799Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:48:19.799Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:48:19.799Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:48:19.800Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:48:19.800Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:48:21.737Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e: 156.14999999999964ms
+2018-10-26T07:48:21.755Z - normal: Simulator: D/jswrapper (129): JS: Start
+2018-10-26T07:48:33.288Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 1ab7cb57-20a8-466a-ba2d-ba7c718df066: 23.493999999998778ms
+2018-10-26T07:48:33.356Z - normal: Simulator: D/jswrapper (129): JS: Game0In
+2018-10-26T07:48:33.357Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T07:48:33.358Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T07:48:33.359Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T07:48:33.360Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T07:48:33.369Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T07:48:33.370Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T07:48:33.370Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T07:48:34.967Z - normal: Simulator: D/jswrapper (452): ScriptEngine::cleanup begin ...
+2018-10-26T07:48:34.968Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 112, all objects: 176
+2018-10-26T07:48:35.049Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 104, all objects: 168
+2018-10-26T07:48:35.049Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 104, all objects: 168
+2018-10-26T07:48:35.149Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 104, all objects: 168
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (51) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (35) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (2) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (44) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (9) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (47) by GC
+2018-10-26T07:48:35.150Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (27) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (1) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (7) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (2) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (3) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (4) by GC
+2018-10-26T07:48:35.151Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (16) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (1) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (75) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (6) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (3) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (32) by GC
+2018-10-26T07:48:35.152Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (30) by GC
+2018-10-26T07:48:35.153Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (4) by GC
+2018-10-26T07:48:35.153Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (5) by GC
+2018-10-26T07:48:35.153Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (34) by GC
+2018-10-26T07:48:35.153Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (8) by GC
+2018-10-26T07:48:35.153Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (17) by GC
+2018-10-26T07:48:35.154Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (3) by GC
+2018-10-26T07:48:35.154Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (21) by GC
+2018-10-26T07:48:35.154Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (20) by GC
+2018-10-26T07:48:35.154Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (15) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (11) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (12) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (13) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (14) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (23) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (18) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (19) by GC
+2018-10-26T07:48:35.155Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (22) by GC
+2018-10-26T07:48:35.156Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (70) by GC
+2018-10-26T07:48:35.157Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (24) by GC
+2018-10-26T07:48:35.157Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (25) by GC
+2018-10-26T07:48:35.157Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (28) by GC
+2018-10-26T07:48:35.158Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (26) by GC
+2018-10-26T07:48:35.158Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (29) by GC
+2018-10-26T07:48:35.158Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (33) by GC
+2018-10-26T07:48:35.158Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (31) by GC
+2018-10-26T07:48:35.159Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (36) by GC
+2018-10-26T07:48:35.159Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (37) by GC
+2018-10-26T07:48:35.159Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (38) by GC
+2018-10-26T07:48:35.159Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (39) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (40) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (43) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (41) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (42) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (45) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (46) by GC
+2018-10-26T07:48:35.160Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (79) by GC
+2018-10-26T07:48:35.161Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (87) by GC
+2018-10-26T07:48:35.161Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (71) by GC
+2018-10-26T07:48:35.161Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (72) by GC
+2018-10-26T07:48:35.161Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (73) by GC
+2018-10-26T07:48:35.161Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (74) by GC
+2018-10-26T07:48:35.162Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (76) by GC
+2018-10-26T07:48:35.162Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (77) by GC
+2018-10-26T07:48:35.162Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (78) by GC
+2018-10-26T07:48:35.162Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (80) by GC
+2018-10-26T07:48:35.177Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (81) by GC
+2018-10-26T07:48:35.177Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (82) by GC
+2018-10-26T07:48:35.177Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (83) by GC
+2018-10-26T07:48:35.206Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (84) by GC
+2018-10-26T07:48:35.207Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (85) by GC
+2018-10-26T07:48:35.219Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (86) by GC
+2018-10-26T07:48:35.219Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (88) by GC
+2018-10-26T07:48:35.220Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (89) by GC
+2018-10-26T07:48:35.220Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (90) by GC
+2018-10-26T07:48:35.220Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (91) by GC
+2018-10-26T07:48:35.220Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (92) by GC
+2018-10-26T07:48:35.220Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (93) by GC
+2018-10-26T07:48:35.221Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (94) by GC
+2018-10-26T07:48:35.221Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (6) by GC
+2018-10-26T07:48:35.262Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (55) by GC
+2018-10-26T07:48:35.262Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (10) by GC
+2018-10-26T07:48:35.262Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (48) by GC
+2018-10-26T07:48:35.262Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (49) by GC
+2018-10-26T07:48:35.263Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (50) by GC
+2018-10-26T07:48:35.264Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (52) by GC
+2018-10-26T07:48:35.264Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (53) by GC
+2018-10-26T07:48:35.264Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (54) by GC
+2018-10-26T07:48:35.264Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (56) by GC
+2018-10-26T07:48:35.265Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (57) by GC
+2018-10-26T07:48:35.265Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (58) by GC
+2018-10-26T07:48:35.265Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (59) by GC
+2018-10-26T07:48:35.265Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (60) by GC
+2018-10-26T07:48:35.266Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (61) by GC
+2018-10-26T07:48:35.266Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (62) by GC
+2018-10-26T07:48:35.266Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (63) by GC
+2018-10-26T07:48:35.266Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (64) by GC
+2018-10-26T07:48:35.266Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (65) by GC
+2018-10-26T07:48:35.268Z - normal: Simulator: D/jswrapper (297): Destroy WebGLFramebuffer (1) by GC
+2018-10-26T07:48:35.268Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-10-26T07:48:35.326Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 0, all objects: 0
+2018-10-26T07:48:35.326Z - normal: Simulator: D/jswrapper (515): ScriptEngine::cleanup end ...
+2018-10-26T07:48:36.664Z - error: Simulator: libpng warning: iCCP: known incorrect sRGB profile
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 4032 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T07:48:46.024Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T07:48:46.027Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T07:48:46.027Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T07:48:46.029Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T07:48:46.794Z - error: Build Failed: Error: EPERM: operation not permitted, lstat 'F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\res\import'
+    at r.waterfall.r (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\builder.js:1:3156)
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:696:30
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1209:30
+    at e (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\gulp-build.js:1:21567)
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\del\index.js:50:5
+    at callback (E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\each-async\index.js:33:4)
+    at onetime (E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\onetime\index.js:22:12)
+2018-10-26T07:49:07.016Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T07:49:07.017Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T07:49:07.018Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T07:49:07.018Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T07:49:13.301Z - normal: Start building assets
+2018-10-26T07:49:13.301Z - normal: Start spawn build-worker
+2018-10-26T07:49:14.657Z - normal: Finish spawn build-worker
+2018-10-26T07:49:14.658Z - normal: Start init build-worker
+2018-10-26T07:49:24.614Z - normal: Finish init build-worker
+2018-10-26T07:49:24.614Z - normal: Start build-assets in worker
+2018-10-26T07:49:31.610Z - normal: Finish build-assets in worker
+2018-10-26T07:49:31.621Z - normal: Finish building assets
+2018-10-26T07:49:32.198Z - normal: Start building plugin scripts
+2018-10-26T07:49:32.241Z - normal: Generating main.js from E:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-26T07:49:34.457Z - normal: Built to "F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame" successfully
+2018-10-26T07:50:31.451Z - normal: Initializing...
+
+2018-10-26T07:50:31.460Z - normal: idePortFile: C:\Users\zhuyunqi\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-10-26T07:50:32.480Z - normal: starting ide...
+
+2018-10-26T07:50:45.087Z - normal: IDE server has started, listening on http://127.0.0.1:60006
+
+2018-10-26T07:50:45.093Z - normal: initialization finished
+
+2018-10-26T07:50:45.838Z - normal: open IDE success
+
+2018-10-26T08:03:05.265Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T08:03:05.268Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T08:03:05.268Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T08:03:05.269Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T08:03:15.168Z - normal: Start building assets
+2018-10-26T08:03:15.169Z - normal: Start spawn build-worker
+2018-10-26T08:03:16.747Z - normal: Finish spawn build-worker
+2018-10-26T08:03:16.747Z - normal: Start init build-worker
+2018-10-26T08:03:23.874Z - normal: Finish init build-worker
+2018-10-26T08:03:23.874Z - normal: Start build-assets in worker
+2018-10-26T08:03:36.453Z - normal: Finish build-assets in worker
+2018-10-26T08:03:36.635Z - normal: Finish building assets
+2018-10-26T08:03:37.596Z - normal: Start building plugin scripts
+2018-10-26T08:03:37.678Z - normal: Generating main.js from E:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-26T08:03:40.550Z - normal: Built to "F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame" successfully
+2018-10-26T08:06:35.952Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T08:06:35.956Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T08:06:35.956Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T08:06:35.960Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T08:06:36.633Z - error: Build Failed: Error: EPERM: operation not permitted, lstat 'F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\res\raw-assets\0e'
+    at r.waterfall.r (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\builder.js:1:3156)
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:696:30
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1209:30
+    at e (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\gulp-build.js:1:21567)
+    at E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\del\index.js:50:5
+    at callback (E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\each-async\index.js:33:4)
+    at onetime (E:\Cocos Creator 202\CocosCreator\resources\app.asar\node_modules\onetime\index.js:22:12)
+2018-10-26T08:06:43.770Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T08:06:43.771Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T08:06:43.771Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T08:06:43.772Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T08:06:49.732Z - normal: Start building assets
+2018-10-26T08:06:49.732Z - normal: Start spawn build-worker
+2018-10-26T08:06:51.210Z - normal: Finish spawn build-worker
+2018-10-26T08:06:51.211Z - normal: Start init build-worker
+2018-10-26T08:07:01.199Z - normal: Finish init build-worker
+2018-10-26T08:07:01.199Z - normal: Start build-assets in worker
+2018-10-26T08:07:07.856Z - normal: Finish build-assets in worker
+2018-10-26T08:07:07.869Z - normal: Finish building assets
+2018-10-26T08:07:08.262Z - normal: Start building plugin scripts
+2018-10-26T08:07:08.392Z - normal: Generating main.js from E:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-26T08:07:10.092Z - normal: Built to "F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame" successfully
+2018-10-26T08:07:13.090Z - normal: Initializing...
+
+2018-10-26T08:07:13.099Z - normal: idePortFile: C:\Users\zhuyunqi\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-10-26T08:07:14.117Z - normal: starting ide...
+
+2018-10-26T08:07:26.075Z - normal: IDE server has started, listening on http://127.0.0.1:58824
+
+2018-10-26T08:07:26.082Z - normal: initialization finished
+
+2018-10-26T08:07:26.798Z - normal: open IDE success
+
+2018-10-26T08:11:36.208Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build",
+  "debug": false,
+  "dest": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c",
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight2",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight2",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxa16f5987181cf7bf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "c4184aed-44c7-42",
+  "zipCompressJs": true,
+  "project": "F:\\NewCode\\RedBlue\\Client\\RedBlueFight2\\RedBlueFight2",
+  "projectName": "RedBlueFight2",
+  "debugBuildWorker": false
+}
+2018-10-26T08:11:36.212Z - normal: Building F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-10-26T08:11:36.212Z - normal: Destination F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame
+2018-10-26T08:11:36.213Z - normal: Delete F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame\**\*
+2018-10-26T08:11:43.373Z - normal: Start building assets
+2018-10-26T08:11:43.374Z - normal: Start spawn build-worker
+2018-10-26T08:11:44.977Z - normal: Finish spawn build-worker
+2018-10-26T08:11:44.977Z - normal: Start init build-worker
+2018-10-26T08:11:51.413Z - normal: Finish init build-worker
+2018-10-26T08:11:51.414Z - normal: Start build-assets in worker
+2018-10-26T08:11:56.692Z - normal: Finish build-assets in worker
+2018-10-26T08:11:56.701Z - normal: Finish building assets
+2018-10-26T08:11:57.110Z - normal: Start building plugin scripts
+2018-10-26T08:11:57.117Z - normal: Generating main.js from E:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-26T08:11:58.863Z - normal: Built to "F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2\build\wechatgame" successfully
+2018-10-26T08:12:05.053Z - normal: Initializing...
+
+2018-10-26T08:12:05.061Z - normal: idePortFile: C:\Users\zhuyunqi\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-10-26T08:12:06.080Z - normal: starting ide...
+
+2018-10-26T08:12:13.600Z - normal: IDE server has started, listening on http://127.0.0.1:34556
+initialization finished
+open IDE success
+
+2018-10-26T08:17:18.788Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-10-26T08:17:18.792Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 948.00
+2018-10-26T08:17:18.793Z - normal: Simulator: FRAME SCALE = 0.75
+2018-10-26T08:17:20.932Z - normal: Simulator: Ready for GLSL
+2018-10-26T08:17:20.932Z - normal: Simulator: Ready for OpenGL 2.0
+2018-10-26T08:17:20.932Z - normal: Simulator: Project Config:
+2018-10-26T08:17:20.932Z - normal: Simulator:     project dir: E:\Cocos Creator 202\CocosCreator\resources\cocos2d-x\simulator\win32\
+2018-10-26T08:17:20.933Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-10-26T08:17:20.933Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-10-26T08:17:20.933Z - normal: Simulator:     frame size: 640 x 960
+2018-10-26T08:17:20.933Z - normal: Simulator:     frame scale: 0.75
+2018-10-26T08:17:20.933Z - normal: Simulator:     show console: NO
+2018-10-26T08:17:20.934Z - normal: Simulator:     write debug log: NO ()
+2018-10-26T08:17:20.934Z - normal: Simulator:     listen: 
+2018-10-26T08:17:20.934Z - normal: Simulator:     debugger: none
+2018-10-26T08:17:20.934Z - normal: Simulator:     add searching path:
+2018-10-26T08:17:20.934Z - normal: Simulator: 
+2018-10-26T08:17:20.934Z - normal: Simulator: 
+2018-10-26T08:17:20.934Z - normal: Simulator: 
+2018-10-26T08:17:20.935Z - normal: Simulator: resetDesignResolution request
+2018-10-26T08:17:20.935Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:17:20.935Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2018-10-26T08:17:20.935Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:17:20.935Z - normal: Simulator: D/jswrapper (368): Initializing V8, version: 6.0.286.52
+2018-10-26T08:17:21.015Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-10-26T08:17:21.018Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-10-26T08:17:21.019Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-10-26T08:17:21.083Z - normal: Simulator: D/jswrapper (129): JS: Enable batch GL commands optimization!
+2018-10-26T08:17:21.083Z - normal: Simulator: resetDesignResolution request
+2018-10-26T08:17:21.083Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:17:21.084Z - normal: Simulator: LOAD Js FILE: main.js
+2018-10-26T08:17:21.084Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:17:21.827Z - normal: Simulator: iShow!
+2018-10-26T08:17:21.832Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8b4c
+2018-10-26T08:17:21.833Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8869
+2018-10-26T08:17:21.860Z - normal: Simulator: D/jswrapper (129): JS: Cocos Creator v2.0.2
+2018-10-26T08:17:22.320Z - normal: Simulator: D/jswrapper (129): JS: Create GameData
+2018-10-26T08:17:22.321Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.322Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.329Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.329Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.329Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.329Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.333Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:22.335Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:17:23.879Z - normal: Simulator: D/jswrapper (129): JS: calledBall
+2018-10-26T08:17:28.982Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 1ab7cb57-20a8-466a-ba2d-ba7c718df066: 209.52500000000055ms
+2018-10-26T08:17:29.108Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:17:29.108Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:17:29.108Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:17:29.108Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:17:29.109Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:17:29.109Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:17:29.109Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:17:29.109Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:44:47.226Z - normal: Simulator: D/jswrapper (452): ScriptEngine::cleanup begin ...
+2018-10-26T08:44:47.227Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 77, all objects: 141
+2018-10-26T08:44:47.291Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 75, all objects: 139
+2018-10-26T08:44:47.291Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 75, all objects: 139
+2018-10-26T08:44:47.347Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 75, all objects: 139
+2018-10-26T08:44:47.351Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (44) by GC
+2018-10-26T08:44:47.352Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (21) by GC
+2018-10-26T08:44:47.352Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (1) by GC
+2018-10-26T08:44:47.352Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (4) by GC
+2018-10-26T08:44:47.352Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (2) by GC
+2018-10-26T08:44:47.352Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (2) by GC
+2018-10-26T08:44:47.353Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (3) by GC
+2018-10-26T08:44:47.360Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (1) by GC
+2018-10-26T08:44:47.370Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (36) by GC
+2018-10-26T08:44:47.370Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (28) by GC
+2018-10-26T08:44:47.371Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (26) by GC
+2018-10-26T08:44:47.371Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (43) by GC
+2018-10-26T08:44:47.371Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (4) by GC
+2018-10-26T08:44:47.371Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (31) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (18) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (11) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (3) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (6) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (5) by GC
+2018-10-26T08:44:47.372Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (17) by GC
+2018-10-26T08:44:47.373Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (7) by GC
+2018-10-26T08:44:47.373Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (8) by GC
+2018-10-26T08:44:47.373Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (41) by GC
+2018-10-26T08:44:47.373Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (9) by GC
+2018-10-26T08:44:47.373Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (15) by GC
+2018-10-26T08:44:47.374Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (51) by GC
+2018-10-26T08:44:47.374Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (27) by GC
+2018-10-26T08:44:47.374Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (3) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (12) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (50) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (24) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (23) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (13) by GC
+2018-10-26T08:44:47.375Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (14) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (35) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (16) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (34) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (29) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (52) by GC
+2018-10-26T08:44:47.376Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (19) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (49) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (20) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (47) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (22) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (45) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (32) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (25) by GC
+2018-10-26T08:44:47.377Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (30) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (53) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (33) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (38) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (37) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (39) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (40) by GC
+2018-10-26T08:44:47.378Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (42) by GC
+2018-10-26T08:44:47.379Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (46) by GC
+2018-10-26T08:44:47.379Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (10) by GC
+2018-10-26T08:44:47.379Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (48) by GC
+2018-10-26T08:44:47.380Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (54) by GC
+2018-10-26T08:44:47.380Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (55) by GC
+2018-10-26T08:44:47.380Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (56) by GC
+2018-10-26T08:44:47.381Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (57) by GC
+2018-10-26T08:44:47.381Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (58) by GC
+2018-10-26T08:44:47.381Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (59) by GC
+2018-10-26T08:44:47.381Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (60) by GC
+2018-10-26T08:44:47.381Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (61) by GC
+2018-10-26T08:44:47.382Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (62) by GC
+2018-10-26T08:44:47.382Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (63) by GC
+2018-10-26T08:44:47.382Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (64) by GC
+2018-10-26T08:44:47.382Z - normal: Simulator: D/jswrapper (297): Destroy WebGLFramebuffer (1) by GC
+2018-10-26T08:44:47.382Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-10-26T08:44:47.445Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 0, all objects: 0
+2018-10-26T08:44:47.447Z - normal: Simulator: D/jswrapper (515): ScriptEngine::cleanup end ...
+2018-10-26T08:44:47.514Z - error: Simulator: libpng warning: iCCP: known incorrect sRGB profile
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T08:44:47.514Z - error: Simulator: 
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T08:45:13.112Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-10-26T08:45:13.114Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 948.00
+2018-10-26T08:45:13.114Z - normal: Simulator: FRAME SCALE = 0.50
+2018-10-26T08:45:15.727Z - normal: Simulator: Ready for GLSL
+2018-10-26T08:45:15.727Z - normal: Simulator: Ready for OpenGL 2.0
+2018-10-26T08:45:15.727Z - normal: Simulator: Project Config:
+2018-10-26T08:45:15.728Z - normal: Simulator:     project dir: E:\Cocos Creator 202\CocosCreator\resources\cocos2d-x\simulator\win32\
+2018-10-26T08:45:15.728Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-10-26T08:45:15.728Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-10-26T08:45:15.728Z - normal: Simulator:     frame size: 750 x 1334
+2018-10-26T08:45:15.728Z - normal: Simulator:     frame scale: 0.50
+2018-10-26T08:45:15.729Z - normal: Simulator:     show console: NO
+2018-10-26T08:45:15.729Z - normal: Simulator:     write debug log: NO ()
+2018-10-26T08:45:15.729Z - normal: Simulator:     listen: 
+2018-10-26T08:45:15.729Z - normal: Simulator:     debugger: none
+2018-10-26T08:45:15.729Z - normal: Simulator:     add searching path:
+2018-10-26T08:45:15.729Z - normal: Simulator: 
+2018-10-26T08:45:15.729Z - normal: Simulator: 
+2018-10-26T08:45:15.729Z - normal: Simulator: 
+2018-10-26T08:45:15.730Z - normal: Simulator: resetDesignResolution request
+2018-10-26T08:45:15.730Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:45:15.730Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2018-10-26T08:45:15.730Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:45:15.730Z - normal: Simulator: D/jswrapper (368): Initializing V8, version: 6.0.286.52
+2018-10-26T08:45:15.730Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-10-26T08:45:15.730Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-10-26T08:45:15.730Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-10-26T08:45:15.730Z - normal: Simulator: D/jswrapper (129): JS: Enable batch GL commands optimization!
+2018-10-26T08:45:15.731Z - normal: Simulator: resetDesignResolution request
+2018-10-26T08:45:15.731Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:45:15.731Z - normal: Simulator: LOAD Js FILE: main.js
+2018-10-26T08:45:15.731Z - normal: Simulator: ------------------------------------------------
+2018-10-26T08:45:15.731Z - normal: Simulator: iShow!
+2018-10-26T08:45:16.037Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8b4c
+2018-10-26T08:45:16.040Z - normal: Simulator: D/jswrapper (3708): glGetIntegerv: pname: 0x8869
+2018-10-26T08:45:16.074Z - normal: Simulator: D/jswrapper (129): JS: Cocos Creator v2.0.2
+2018-10-26T08:45:16.511Z - normal: Simulator: D/jswrapper (129): JS: Create GameData
+2018-10-26T08:45:16.512Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.512Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.515Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.515Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.515Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.516Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.516Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:16.516Z - normal: Simulator: D/jswrapper (129): JS: Create Game Type
+2018-10-26T08:45:18.039Z - normal: Simulator: D/jswrapper (129): JS: calledBall
+2018-10-26T08:45:22.495Z - normal: Simulator: D/jswrapper (129): JS: LoadScene 1ab7cb57-20a8-466a-ba2d-ba7c718df066: 200.4380000000001ms
+2018-10-26T08:45:22.609Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:22.609Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:22.610Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:22.610Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:22.611Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:22.612Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:22.612Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:22.612Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:26.786Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:26.787Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:26.787Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:26.787Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:26.788Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:26.788Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:26.788Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:26.788Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:28.473Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:28.474Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:28.474Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:28.474Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:28.476Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:28.476Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:28.476Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:28.477Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:31.052Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:31.053Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:31.053Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:31.053Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:31.054Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:31.054Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:31.054Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:31.055Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:32.786Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:32.788Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:32.789Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:32.790Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:32.790Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:32.791Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:32.791Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:32.791Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:36.037Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:36.038Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:36.038Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:36.038Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:36.040Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:36.040Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:36.040Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:36.040Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:38.166Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:38.167Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:38.167Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:38.174Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:38.175Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:38.175Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:38.175Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:38.175Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:39.974Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:39.975Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:39.975Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:39.976Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:39.977Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:39.977Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:39.977Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:39.978Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:44.497Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:44.498Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:44.499Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:46.662Z - normal: Simulator: D/jswrapper (129): JS: Game0Not In
+2018-10-26T08:45:46.663Z - normal: Simulator: D/jswrapper (129): JS: Game1Not In
+2018-10-26T08:45:46.663Z - normal: Simulator: D/jswrapper (129): JS: Game2Not In
+2018-10-26T08:45:46.663Z - normal: Simulator: D/jswrapper (129): JS: Game3Not In
+2018-10-26T08:45:46.665Z - normal: Simulator: D/jswrapper (129): JS: Game4Not In
+2018-10-26T08:45:46.666Z - normal: Simulator: D/jswrapper (129): JS: Game5Not In
+2018-10-26T08:45:46.666Z - normal: Simulator: D/jswrapper (129): JS: Game6Not In
+2018-10-26T08:45:46.666Z - normal: Simulator: D/jswrapper (129): JS: Game7Not In
+2018-10-26T08:45:49.362Z - normal: Simulator: D/jswrapper (452): ScriptEngine::cleanup begin ...
+2018-10-26T08:45:49.363Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 78, all objects: 142
+2018-10-26T08:45:49.448Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 76, all objects: 140
+2018-10-26T08:45:49.448Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 76, all objects: 140
+2018-10-26T08:45:49.531Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 76, all objects: 140
+2018-10-26T08:45:49.532Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (1) by GC
+2018-10-26T08:45:49.533Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (33) by GC
+2018-10-26T08:45:49.533Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (52) by GC
+2018-10-26T08:45:49.533Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (2) by GC
+2018-10-26T08:45:49.534Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (23) by GC
+2018-10-26T08:45:49.534Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (3) by GC
+2018-10-26T08:45:49.534Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (2) by GC
+2018-10-26T08:45:49.534Z - normal: Simulator: D/jswrapper (259): Destroy WebGLBuffer (4) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (37) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (20) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (1) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (26) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (25) by GC
+2018-10-26T08:45:49.535Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (3) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (9) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (4) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (16) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (6) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (5) by GC
+2018-10-26T08:45:49.536Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (7) by GC
+2018-10-26T08:45:49.539Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (44) by GC
+2018-10-26T08:45:49.541Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (8) by GC
+2018-10-26T08:45:49.572Z - normal: Simulator: D/jswrapper (316): Destroy WebGLProgram (3) by GC
+2018-10-26T08:45:49.573Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (11) by GC
+2018-10-26T08:45:49.575Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (12) by GC
+2018-10-26T08:45:49.575Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (27) by GC
+2018-10-26T08:45:49.576Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (14) by GC
+2018-10-26T08:45:49.576Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (13) by GC
+2018-10-26T08:45:49.576Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (29) by GC
+2018-10-26T08:45:49.576Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (15) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (43) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (17) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (41) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (18) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (19) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (21) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (22) by GC
+2018-10-26T08:45:49.577Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (36) by GC
+2018-10-26T08:45:49.578Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (24) by GC
+2018-10-26T08:45:49.578Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (28) by GC
+2018-10-26T08:45:49.578Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (34) by GC
+2018-10-26T08:45:49.578Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (30) by GC
+2018-10-26T08:45:49.578Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (32) by GC
+2018-10-26T08:45:49.579Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (31) by GC
+2018-10-26T08:45:49.579Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (39) by GC
+2018-10-26T08:45:49.579Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (35) by GC
+2018-10-26T08:45:49.579Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (38) by GC
+2018-10-26T08:45:49.580Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (51) by GC
+2018-10-26T08:45:49.580Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (49) by GC
+2018-10-26T08:45:49.580Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (55) by GC
+2018-10-26T08:45:49.580Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (40) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (42) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (45) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (46) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (47) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (10) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (48) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (53) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (50) by GC
+2018-10-26T08:45:49.581Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (54) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (56) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (57) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (58) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (59) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (60) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (61) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (62) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (63) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (64) by GC
+2018-10-26T08:45:49.582Z - normal: Simulator: D/jswrapper (297): Destroy WebGLFramebuffer (1) by GC
+2018-10-26T08:45:49.583Z - normal: Simulator: D/jswrapper (240): Destroy WebGLTexture (65) by GC
+2018-10-26T08:45:49.583Z - normal: Simulator: D/jswrapper (593): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-10-26T08:45:49.666Z - normal: Simulator: D/jswrapper (601): GC end ..., (js->native map) size: 0, all objects: 0
+2018-10-26T08:45:49.666Z - normal: Simulator: D/jswrapper (515): ScriptEngine::cleanup end ...
+2018-10-26T08:45:50.950Z - error: Simulator: libpng warning: iCCP: known incorrect sRGB profile
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+
+Warning: Real sample count 1017792 differs from given gapless sample count -576. Frankenstein stream?
+    at HTMLElement.print-simulator-log (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1487)
+    at Object.e._dispatch (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (E:\Cocos Creator 202\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-10-26T13:39:19.291Z - info: shutdown preview server

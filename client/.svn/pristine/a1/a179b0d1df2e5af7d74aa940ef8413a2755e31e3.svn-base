@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "digits_red",
+    "texture": "0eb0c5df-696f-4b51-bbc6-491d79d14e69",
+    "atlas": "",
+    "rect": [
+      8,
+      1,
+      985,
+      127
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      1000,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

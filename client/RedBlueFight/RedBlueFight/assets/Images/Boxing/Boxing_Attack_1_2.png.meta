@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5d2173ce-6edf-4b6e-b79c-e668bf336b82",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "Boxing_Attack_1_2": {
+      "ver": "1.0.3",
+      "uuid": "bbccb022-3c4f-4913-a946-5b89feb62094",
+      "rawTextureUuid": "5d2173ce-6edf-4b6e-b79c-e668bf336b82",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -128.5,
+      "offsetY": 51.5,
+      "trimX": 0,
+      "trimY": 17,
+      "width": 196,
+      "height": 166,
+      "rawWidth": 453,
+      "rawHeight": 303,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

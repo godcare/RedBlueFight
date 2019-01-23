@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "guess_coin_face",
+    "texture": "1c4a9685-75c3-4ef9-b0f1-8947fa2038e7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      282,
+      282
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      282,
+      282
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Virus_Red_4",
+    "texture": "412d08e9-2074-4b67-88f5-0c3baf465d57",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      102,
+      104
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      104,
+      104
+    ]
+  }
+}

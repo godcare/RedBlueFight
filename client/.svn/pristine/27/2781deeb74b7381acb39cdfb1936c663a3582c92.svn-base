@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "UI_ClockStrip_2",
+    "texture": "942679bd-1414-4947-b741-b9dc85e80ada",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      768,
+      78
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

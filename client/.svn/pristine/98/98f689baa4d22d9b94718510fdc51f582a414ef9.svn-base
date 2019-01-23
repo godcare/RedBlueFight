@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_choose_game_background_inactive",
+    "texture": "87ccfa1c-3fd6-43fe-b4e2-df3a4d04c1d3",
+    "atlas": "",
+    "rect": [
+      49,
+      33,
+      543,
+      668
+    ],
+    "offset": [
+      0,
+      -16.5
+    ],
+    "originalSize": [
+      641,
+      701
+    ]
+  }
+}

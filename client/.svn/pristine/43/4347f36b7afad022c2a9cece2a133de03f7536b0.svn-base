@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Hurt_1_1",
+    "texture": "848c7da9-552d-479c-90fa-9ca658b93fa1",
+    "atlas": "",
+    "rect": [
+      27,
+      19,
+      350,
+      284
+    ],
+    "offset": [
+      -24.5,
+      -9.5
+    ],
+    "originalSize": [
+      453,
+      303
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

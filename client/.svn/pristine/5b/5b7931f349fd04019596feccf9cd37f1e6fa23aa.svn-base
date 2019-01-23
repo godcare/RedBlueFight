@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "PushOut_Ball_1_0",
+    "texture": "6b62497a-a734-4db2-8689-100f42999545",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      511,
+      511
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

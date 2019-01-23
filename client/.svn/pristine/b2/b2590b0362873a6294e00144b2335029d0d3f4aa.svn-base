@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "MusicalChairs_Stool",
+    "texture": "e163151e-b4c3-4149-b5e6-fd686a7dd174",
+    "atlas": "",
+    "rect": [
+      3,
+      9,
+      121,
+      117
+    ],
+    "offset": [
+      -3.5,
+      -0.5
+    ],
+    "originalSize": [
+      134,
+      134
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

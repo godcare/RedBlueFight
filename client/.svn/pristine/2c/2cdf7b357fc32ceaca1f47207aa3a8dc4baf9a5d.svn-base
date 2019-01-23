@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_result_menu_button_normal",
+    "texture": "46ad6d08-442d-48d6-b4ac-ffe8ee43990f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      224,
+      224
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      224,
+      224
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

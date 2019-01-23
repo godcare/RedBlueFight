@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "race_vehicle",
+    "texture": "cb634eea-788e-4058-a59d-9f068c2a353d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      130,
+      102
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      130,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

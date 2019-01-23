@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "race_light",
+    "texture": "2a1256bf-4e22-4573-b709-3194bb2e669a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      178,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      178,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

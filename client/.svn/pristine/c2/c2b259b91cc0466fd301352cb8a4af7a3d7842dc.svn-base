@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "capsule_band_1",
+    "texture": "fc234895-81a5-4091-9662-33656cc40fd0",
+    "atlas": "",
+    "rect": [
+      0,
+      16,
+      68,
+      212
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      68,
+      242
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

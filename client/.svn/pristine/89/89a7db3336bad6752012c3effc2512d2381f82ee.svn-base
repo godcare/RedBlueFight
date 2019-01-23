@@ -1,0 +1,103 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Common/MoveRepeat.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'b8e11x//ZpBnpL97cxdEhPJ', 'MoveRepeat', __filename);
+// Scripts/Control/Games/Common/MoveRepeat.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        xFrom: 0,
+        xTo: 0,
+        yFrom: 0,
+        yTo: 0,
+        interval: 1,
+        dFlag: 1
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        // this.moveStart();
+    },
+    moveStart: function moveStart() {
+        this.unscheduleAllCallbacks();
+        this.schedule(function () {
+            if (this.dFlag == 1) {
+                this.x = this.xFrom;
+                this.y = this.yFrom;
+                var aa = cc.moveTo(this.interval, new cc.Vec2(this.xTo, this.yTo));
+                this.node.runAction(aa);
+            } else {
+                this.x = this.xTo;
+                this.y = this.yTo;
+                var aa = cc.moveTo(this.interval, new cc.Vec2(this.xFrom, this.yFrom));
+                this.node.runAction(aa);
+            }
+            this.dFlag *= -1;
+        }, this.interval);
+    },
+    continueMove: function continueMove() {
+        this.unscheduleAllCallbacks();
+        var totalDist = Math.sqrt((this.xTo - this.xFrom) * (this.xTo - this.xFrom) + (this.yTo - this.yFrom) * (this.yTo - this.yFrom));
+        cc.log("repeat move total dis:" + totalDist);
+        this.schedule(function () {
+            if (this.dFlag == 1) {
+                var toDist = Math.sqrt((this.xTo - this.x) * (this.xTo - this.x) + (this.yTo - this.y) * (this.yTo - this.y));
+                cc.log("repeat move progress:" + this.x);
+                var aa = cc.moveTo(this.interval * (toDist / totalDist), new cc.Vec2(this.xTo, this.yTo));
+                this.node.runAction(aa);
+            } else {
+                var fromDist = Math.sqrt((this.xFrom - this.x) * (this.xFrom - this.x) + (this.yFrom - this.y) * (this.yFrom - this.y));
+                cc.log("repeat move progress:" + this.x);
+                var aa = cc.moveTo(this.interval * (fromDist / totalDist), new cc.Vec2(this.xFrom, this.yFrom));
+                this.node.runAction(aa);
+            }
+            this.dFlag *= -1;
+        }, this.interval);
+    }
+    // update (dt) {},
+
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=MoveRepeat.js.map
+        

@@ -1,0 +1,194 @@
+"use strict";
+cc._RF.push(module, '98425FIadpIz4GuCoJEaw+G', 'Game10Control');
+// Scripts/Control/Games/Game10/Game10Control.js
+
+"use strict";
+
+var _properties;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: (_properties = {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        redPre: {
+            default: null,
+            type: cc.Node
+        },
+        bluePre: {
+            default: null,
+            type: cc.Node
+        },
+        redBall: {
+            default: null,
+            type: cc.Node
+        },
+        blueBall: {
+            default: null,
+            type: cc.Node
+        },
+        jumpDownList: [],
+        GameStatus: 0, //0未开始，1开始了，2结束了
+        isRedDown: false,
+        isBlueDown: false,
+        isRedScored: false,
+        isBlueScored: false,
+        redScore: 0,
+        blueScore: 0,
+        ScoreSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        }
+    }, _defineProperty(_properties, "redScore", {
+        default: null,
+        type: cc.Node
+    }), _defineProperty(_properties, "blueScore", {
+        default: null,
+        type: cc.Node
+    }), _properties),
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad: function onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+    },
+    start: function start() {
+        this.startAnimation();
+        // cc.log(this.Coin.scaleX);
+    },
+    startAnimation: function startAnimation() {
+
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+            this.spawnBall(0);
+        }, 4.5);
+    },
+    OnBallHit: function OnBallHit(ballName, hitName) {
+        if (ballName == "redBall") {
+            switch (hitName) {
+                case "RightScore":
+                    if (!this.isRedScored) {
+                        this.redScore += 1;
+                        this.isRedScored = true;
+                        this.scheduleOnce(function () {
+                            this.spawnBall(0);
+                            this.setScore(0, this.redScore);
+                        }, 1);
+                    }
+                    break;
+                case "LeftScore":
+                case "Bottom":
+                case "Top":
+                    this.spawnBall(0);
+                    break;
+            }
+        }
+    },
+    OnPanelHitBorder: function OnPanelHitBorder(panelName, boarderName) {
+        cc.log(panelName + " hit " + boarderName);
+        if (panelName == "redPanel") {
+            if (boarderName == "left") {
+                if (!this.isRedDown) {
+                    this.isRedDown = true;
+                    this.jumpDownBall(0);
+                }
+            } else if (boarderName == "redBall") {
+                cc.log("red ball Add force");
+                this.redBall.getComponent(cc.RigidBody).applyForceToCenter(new cc.Vec2(5000, 0), true);
+            } else if (boarderName == "right") {
+                if (this.redBall.x >= 130) {
+                    this.jumpUpBall(0);
+                }
+            }
+        }
+    },
+    jumpDownBall: function jumpDownBall(ballIndex) {
+        if (ballIndex == 0) {
+            this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(100, 250);
+        }
+    },
+    jumpUpBall: function jumpUpBall(ballIndex) {
+        if (ballIndex == 0) {
+            this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(100, 300);
+        }
+    },
+    spawnBall: function spawnBall(ballIndex) {
+        if (ballIndex == 0) {
+
+            // this.scheduleOnce(function () {
+            var newBall = cc.instantiate(this.redPre);
+            // this.redBall = cc.instantiate(this.redPre);
+
+            newBall.active = true;
+            newBall.parent = this.redPre.parent;
+            // this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+            newBall.x = cc.find("Canvas/GameCore/RedPart/redSpawn").x;
+            newBall.y = cc.find("Canvas/GameCore/RedPart/redSpawn").y;
+            this.isRedDown = false;
+            this.isRedScored = false;
+            if (this.redBall != null) {
+                this.redBall.destroy();
+            }
+            this.redBall = newBall;
+            // }, 0.1);
+        }
+    },
+    setScore: function setScore(scoreIndex, score) {
+        if (scoreIndex == 0) {
+            for (var i = 0; i < score; i++) {
+                cc.find(i.toString(), this.redScore).getComponent(cc.Sprite).spriteFrame = this.ScoreSprites[0];
+            }
+        }
+    }
+    // update (dt) {},
+
+});
+
+cc._RF.pop();

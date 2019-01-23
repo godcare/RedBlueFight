@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "launch_button_weixin_pressed",
+    "texture": "d8f9c7b2-8be9-451e-a9ab-ed587d48c564",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      266,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      266,
+      80
+    ]
+  }
+}

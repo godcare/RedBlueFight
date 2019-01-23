@@ -1,0 +1,80 @@
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad() {
+        if (!(cc.sys.platform === cc.sys.WECHAT_GAME)) {
+            cc.director.loadScene("Loading");
+        }
+        else {
+            if (wx.getUpdateManager) { //微信6.6.7才支持此接口
+                const updateManager = wx.getUpdateManager();
+                // 检查更新
+                updateManager.onCheckForUpdate((res) => {
+                    console.log("热更新接口返回：", res);
+                    if (res.hasUpdate == false) { // 没有更新
+                        cc.director.loadScene("Loading");
+
+                    }
+                });
+                // 下载更新完成
+                updateManager.onUpdateReady((res) => {
+                    wx.showModal({
+                        title: '更新提示',
+                        content: '新版本已经准备好，是否重启应用？',
+                        success: function (res) {
+                            if (res.confirm) {
+                                // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+                                updateManager.applyUpdate()
+                            }
+                        }
+
+
+                    })
+                });
+
+            }
+            else { //低版本时直接进入
+
+                cc.director.loadScene("Loading");
+
+
+            }
+        }
+    },
+
+    start() {
+
+    },
+
+    // update (dt) {},
+});

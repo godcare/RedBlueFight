@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "launch_button_guest_pressed",
+    "texture": "b9224ca3-9624-4f1c-a1ec-6700fee2aeee",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      182,
+      181
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      182,
+      181
+    ]
+  }
+}

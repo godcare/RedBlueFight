@@ -1,0 +1,67 @@
+2018-12-12T12:10:53.778Z - normal: Load ~/.CocosCreator/settings.json
+2018-12-12T12:10:53.786Z - normal: checking language setting...
+2018-12-12T12:10:53.786Z - normal: Language: zh
+2018-12-12T12:10:56.155Z - success: protocol editor-framework registered
+2018-12-12T12:10:56.155Z - success: protocol app registered
+2018-12-12T12:10:56.155Z - success: protocol theme registered
+2018-12-12T12:10:56.155Z - success: protocol packages registered
+2018-12-12T12:10:56.155Z - success: protocol unpack registerred
+2018-12-12T12:10:56.155Z - success: protocol disable-commonjs registerred
+2018-12-12T12:10:56.278Z - normal: connected!
+2018-12-12T12:10:56.278Z - normal: Check project F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-12-12T12:10:56.302Z - normal: Initializing project F:\NewCode\RedBlue\Client\RedBlueFight2\RedBlueFight2
+2018-12-12T12:10:56.366Z - normal: Initializing Cocos2d
+2018-12-12T12:11:00.232Z - normal: Initializing Asset Database
+2018-12-12T12:11:00.378Z - success: protocol uuid registerred
+2018-12-12T12:11:00.378Z - success: protocol db registerred
+2018-12-12T12:11:00.378Z - success: protocol thumbnail registerred
+2018-12-12T12:11:00.378Z - normal: Loading editor/builtin packages
+2018-12-12T12:11:00.630Z - success: assets loaded
+2018-12-12T12:11:00.630Z - success: builder loaded
+2018-12-12T12:11:00.638Z - success: cocos-analytics loaded
+2018-12-12T12:11:00.638Z - success: console loaded
+2018-12-12T12:11:00.686Z - success: fb-instant-games loaded
+2018-12-12T12:11:00.694Z - success: hierarchy loaded
+2018-12-12T12:11:00.702Z - success: inspector loaded
+2018-12-12T12:11:00.702Z - success: keystore loaded
+2018-12-12T12:11:00.710Z - success: node-library loaded
+2018-12-12T12:11:00.710Z - success: package-asset loaded
+2018-12-12T12:11:00.718Z - success: preferences loaded
+2018-12-12T12:11:00.718Z - success: project-exporter loaded
+2018-12-12T12:11:00.742Z - success: project-importer loaded
+2018-12-12T12:11:00.742Z - success: project-settings loaded
+2018-12-12T12:11:00.750Z - success: ui-kit loaded
+2018-12-12T12:11:00.758Z - success: scene loaded
+2018-12-12T12:11:00.758Z - success: sprite-editor loaded
+2018-12-12T12:11:00.766Z - success: store loaded
+2018-12-12T12:11:00.766Z - success: timeline loaded
+2018-12-12T12:11:00.766Z - normal: Loading builtin packages
+2018-12-12T12:11:00.913Z - success: asset-db-debugger loaded
+2018-12-12T12:11:00.939Z - success: code-editor loaded
+2018-12-12T12:11:00.939Z - success: color-picker loaded
+2018-12-12T12:11:00.947Z - success: jsb-adapter loaded
+2018-12-12T12:11:00.963Z - success: package-manager loaded
+2018-12-12T12:11:01.403Z - success: qqplay-adapter loaded
+2018-12-12T12:11:01.462Z - success: sdkbox loaded
+2018-12-12T12:11:01.480Z - success: tester loaded
+2018-12-12T12:11:01.487Z - success: ui-grid loaded
+2018-12-12T12:11:01.511Z - success: ui-kit-preview-extra loaded
+2018-12-12T12:11:01.527Z - success: ui-kit-preview loaded
+2018-12-12T12:11:01.543Z - success: ui-tree loaded
+2018-12-12T12:11:01.543Z - success: weapp-adapter loaded
+2018-12-12T12:11:05.096Z - normal: Loading packages
+2018-12-12T12:11:05.120Z - normal: Watching packages
+2018-12-12T12:11:06.155Z - normal: Run Application
+2018-12-12T12:11:20.664Z - success: preview server running at http://localhost:7456
+2018-12-12T12:17:35.783Z - normal: Initializing...
+
+2018-12-12T12:17:35.847Z - normal: idePortFile: C:\Users\zhuyunqi\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-12-12T12:17:36.938Z - normal: starting ide...
+
+2018-12-12T12:18:00.706Z - normal: IDE server has started, listening on http://127.0.0.1:17912
+initialization finished
+
+2018-12-12T12:18:02.450Z - normal: open IDE success
+
+2018-12-12T12:56:31.761Z - info: shutdown preview server

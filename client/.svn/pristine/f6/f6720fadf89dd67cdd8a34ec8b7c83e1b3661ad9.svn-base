@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_choose_game_page_indicator",
+    "texture": "268a3b78-9a41-4a8b-b2fe-2c84e39534a6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      13,
+      13
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      13,
+      13
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

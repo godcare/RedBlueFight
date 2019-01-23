@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "adventitia",
+    "texture": "c5b5681b-b3a2-4a7b-a81c-1088627d21f0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      97
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      768,
+      98
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ShootBasket_FrontDish_2",
+    "texture": "97c2387a-1104-4efb-8e1e-e36e29ad35db",
+    "atlas": "",
+    "rect": [
+      0,
+      2,
+      145,
+      38
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      145,
+      40
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

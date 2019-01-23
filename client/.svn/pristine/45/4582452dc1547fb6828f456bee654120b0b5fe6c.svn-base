@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Space_TestTube",
+    "texture": "b596f9a1-5bad-43ca-8938-2c7e7813a325",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      63,
+      479
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      64,
+      480
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

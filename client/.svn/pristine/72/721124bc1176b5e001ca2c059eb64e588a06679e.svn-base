@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "launch_button_qq_pressed",
+    "texture": "9dc19b50-e6b7-4714-a79c-7be1e99716e5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      266,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      266,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

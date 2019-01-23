@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fluid",
+    "texture": "9f61c3e8-4563-4bdc-925d-9e4704f115c7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      583
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      768,
+      583
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

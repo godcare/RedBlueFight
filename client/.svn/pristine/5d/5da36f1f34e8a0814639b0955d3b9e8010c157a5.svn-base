@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "syringe_1",
+    "texture": "f662863c-ae79-45ea-8db5-15e609517a9f",
+    "atlas": "",
+    "rect": [
+      0,
+      29,
+      74,
+      131
+    ],
+    "offset": [
+      0,
+      -14.5
+    ],
+    "originalSize": [
+      74,
+      160
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

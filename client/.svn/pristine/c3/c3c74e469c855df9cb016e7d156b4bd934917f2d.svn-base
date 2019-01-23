@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_popup_button_begin",
+    "texture": "023d52ca-1d97-447d-aad8-97e84e3b605a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      195,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      195,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

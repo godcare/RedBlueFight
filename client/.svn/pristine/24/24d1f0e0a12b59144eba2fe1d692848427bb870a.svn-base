@@ -1,0 +1,200 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game13/Game13Control.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'f4472E8Cv9EYJh16DmxeUWX', 'Game13Control', __filename);
+// Scripts/Control/Games/Game13/Game13Control.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        GameStatus: 0, //0未开始，1开始了，2结束了
+        redBall: {
+            default: null,
+            type: cc.Node
+        },
+        blueBall: {
+            default: null,
+            type: cc.Node
+        },
+        isJumpStart: false,
+        UnShowList: [],
+        moveDangerParent: {
+            default: null,
+            type: cc.Node
+        }
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad: function onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+    },
+    start: function start() {
+        // this.redScoreTotalNumber.setNumber(20);
+        for (var i = 0; i < 13; i++) {
+            this.UnShowList.push(i);
+        }
+        this.startAnimation();
+    },
+    startAnimation: function startAnimation() {
+
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+        }, 4.5);
+    },
+    ShowMoveDanger: function ShowMoveDanger() {
+        if (this.UnShowList.length > 0) {
+            var tmpI = Math.floor(Math.random() * this.UnShowList.length);
+            var index = this.UnShowList[tmpI];
+            this.UnShowList.splice(tmpI, 1);
+            var leftObj = cc.find("l" + index.toString(), this.moveDangerParent);
+            var rightObj = cc.find("r" + index.toString(), this.moveDangerParent);
+            leftObj.active = true;
+            rightObj.active = true;
+            var lma = cc.moveTo(0.5, new cc.Vec2(-330, leftObj.y));
+            var rma = cc.moveTo(0.5, new cc.Vec2(330, rightObj.y));
+            leftObj.runAction(lma);
+            rightObj.runAction(rma);
+        }
+    },
+    OnTouchPanelStart: function OnTouchPanelStart(touchName) {
+        if (this.GameStatus == 1) {
+            if (this.isJumpStart) {
+                if (touchName == "redTouch") {
+                    this.jumpBall(0);
+                } else if (touchName == "blueTouch") {
+                    this.jumpBall(1);
+                }
+            } else {
+                cc.log(touchName);
+                this.isJumpStart = true;
+                this.redBall.getComponent(cc.RigidBody).gravityScale = 1;
+                this.blueBall.getComponent(cc.RigidBody).gravityScale = -1;
+                this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(300, 0);
+                this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(-300, 0);
+                this.jumpBall(0);
+                this.jumpBall(1);
+                this.schedule(function () {
+                    this.ShowMoveDanger();
+                }, 2);
+            }
+        }
+    },
+    OnBallHit: function OnBallHit(ballName, hitName, hitParentName) {
+        if (this.GameStatus == 1) {
+            if (ballName == "redBall") {
+                if (hitName == "Left") {
+                    this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(300, this.redBall.getComponent(cc.RigidBody).linearVelocity.y);
+                } else if (hitName == "Right") {
+                    this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(-300, this.redBall.getComponent(cc.RigidBody).linearVelocity.y);
+                } else if (hitName == "Danger" || hitParentName == "moveDangers") {
+                    this.GameStatus = 2;
+                    this.redBall.getComponent(cc.RigidBody).gravityScale = 0;
+                    this.blueBall.getComponent(cc.RigidBody).gravityScale = 0;
+                    this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+                    this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+                    this.SoundMGR.playOver();
+                    this.SoundMGR.playPunch();
+                    this.schedule(function () {
+                        this.redBall.active = !this.redBall.active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 1;
+                        this.GameResultNode.active = true;
+                    }, 1.5);
+                }
+            } else if (ballName == "blueBall") {
+                if (hitName == "Left") {
+                    this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(300, this.blueBall.getComponent(cc.RigidBody).linearVelocity.y);
+                } else if (hitName == "Right") {
+                    this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(-300, this.blueBall.getComponent(cc.RigidBody).linearVelocity.y);
+                } else if (hitName == "Danger" || hitParentName == "moveDangers") {
+                    this.GameStatus = 2;
+                    this.redBall.getComponent(cc.RigidBody).gravityScale = 0;
+                    this.blueBall.getComponent(cc.RigidBody).gravityScale = 0;
+                    this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+                    this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+                    this.SoundMGR.playOver();
+                    this.SoundMGR.playPunch();
+                    this.schedule(function () {
+                        this.blueBall.active = !this.blueBall.active;
+                    }, 0.3);
+                    this.scheduleOnce(function () {
+                        Global.GameData.CurrentWinner = 0;
+                        this.GameResultNode.active = true;
+                    }, 1.5);
+                }
+            }
+        }
+    },
+    jumpBall: function jumpBall(ballIndex) {
+        this.SoundMGR.playVoice();
+        if (ballIndex == 0) {
+            this.redBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(this.redBall.getComponent(cc.RigidBody).linearVelocity.x, 300);
+        } else if (ballIndex == 1) {
+            this.blueBall.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(this.blueBall.getComponent(cc.RigidBody).linearVelocity.x, -300);
+        }
+    }
+    // update (dt) {},
+
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game13Control.js.map
+        

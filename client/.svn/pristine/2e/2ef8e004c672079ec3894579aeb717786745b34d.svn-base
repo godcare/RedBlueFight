@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Circle",
+    "texture": "fed19819-4a51-41ff-931f-0067016a0802",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      470,
+      470
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      470,
+      470
+    ]
+  }
+}

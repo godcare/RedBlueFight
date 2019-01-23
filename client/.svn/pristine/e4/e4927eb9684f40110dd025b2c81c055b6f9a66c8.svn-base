@@ -1,0 +1,239 @@
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        RedPoint:
+        {
+            default: null,
+            type: cc.Label,
+        },
+        BluePoint:
+        {
+            default: null,
+            type: cc.Label,
+        },
+
+        GameIcons:
+        {
+            default: [],
+            type: [cc.Node],
+
+        },
+        GameIconSprites:
+        {
+            default: [],
+            type: [cc.SpriteFrame],
+        },
+        ScheduleSelectSprites:
+        {
+            default: [],
+            type: [cc.SpriteFrame],
+        },
+        StartSprite:
+        {
+            default: null,
+            type: cc.Node,
+        },
+        IsSelectPanelOn:
+        {
+            default: false,
+        },
+        SelectedGamePanel:
+        {
+            default: null,
+            type: cc.Node,
+        },
+        SelectGameSwitch:
+        {
+            default: null,
+            type: cc.Node,
+        },
+        GameListPanel:
+        {
+            default: null,
+            type: cc.Node,
+        },
+        ScheduleGameParent:
+        {
+            default: null,
+            type: cc.Node,
+        },
+        currentSelectedIndex: -1,
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start() {
+        this.InitData();
+    },
+
+    InitData: function () {
+        //初始化游戏图标
+        for (var i = 0; i < 8; i++) {
+            this.GameIcons[i].getChildByName("Name").getComponent(cc.Label).string = Global.GameData.AllGames[i].displayName;
+        }
+        Global.GameData.PlayedGameCount = 0;
+        this.RedPoint.string = Global.GameData.RedPoint.toString();
+        this.BluePoint.string = Global.GameData.BluePoint.toString();
+        this.SetScheduler();
+    },
+
+    //设置排上日程的游戏列表
+    SetScheduler: function () {
+        cc.log("Setting Scheduler");
+        //设置已选
+        for (var i = 0; i < Global.GameData.ScheduledGames.length; i++) {
+            //设置底部游戏列表
+            // cc.find("List/" + Global.GameData.ScheduledGames[i].toString() + "/Mark", this.GameListPanel).active = true;
+            // cc.find("List/" + Global.GameData.ScheduledGames[i].toString() + "/Name", this.GameListPanel).color = new cc.color(255, 255, 255, 255);
+
+            //设置中部游戏日程表
+
+            cc.find(i.toString() + "/Icon", this.ScheduleGameParent).getComponent(cc.Sprite).spriteFrame = this.GameIconSprites[Global.GameData.ScheduledGames[i]];
+            cc.find(i.toString() + "/Name", this.ScheduleGameParent).getComponent(cc.Label).string = Global.GameData.AllGames[Global.GameData.ScheduledGames[i]].displayName;
+            cc.find(i.toString() + "/Icon", this.ScheduleGameParent).active = true;
+            cc.find(i.toString() + "/Name", this.ScheduleGameParent).active = true;
+            cc.find(i.toString(), this.ScheduleGameParent).getComponent(cc.Sprite).spriteFrame = this.ScheduleSelectSprites[0];
+
+        }
+        //设置未选
+        for (var i = Global.GameData.ScheduledGames.length; i < Global.GameData.MaxChooseCount; i++) {
+            cc.find(i.toString() + "/Icon", this.ScheduleGameParent).active = false;
+            cc.find(i.toString() + "/Name", this.ScheduleGameParent).active = false;
+            cc.find(i.toString(), this.ScheduleGameParent).getComponent(cc.Sprite).spriteFrame = this.ScheduleSelectSprites[1];
+        }
+        cc.log("Plan Game:");
+        for (var i = 0; i < Global.GameData.ScheduledGames.length; i++) {
+            cc.log(Global.GameData.ScheduledGames[i]);
+        }
+        for (var i = 0; i < 8; i++) {
+            var tmpI = Global.GameData.ScheduledGames.indexOf(i.toString());
+            if (tmpI == -1) {
+                cc.log("Game" + i + "Not In");
+                cc.find("List/" + i.toString() + "/Mark", this.GameListPanel).active = false;
+                cc.find("List/" + i.toString() + "/Name", this.GameListPanel).color = cc.Color.BLUE;
+            }
+            else {
+                cc.log("Game" + i + "In");
+                cc.find("List/" + i.toString() + "/Mark", this.GameListPanel).active = true;
+                cc.find("List/" + i.toString() + "/Name", this.GameListPanel).color = cc.Color.WHITE;
+            }
+        }
+        //验证是否满足开始条件
+        if (Global.GameData.ScheduledGames.length >= Global.GameData.TotalGameCount) {
+            this.StartSprite.color = cc.Color.ORANGE;
+            this.StartSprite.getComponent(cc.Button).enabled = true;
+        }
+        else {
+            this.StartSprite.color = cc.Color.GRAY;
+            this.StartSprite.getComponent(cc.Button).enabled = false;
+        }
+
+    },
+    OnRemoveThisClick(event, customEventData) {
+        var tmpS = Global.GameData.ScheduledGames.indexOf(this.currentSelectedIndex.toString());
+        Global.GameData.ScheduledGames.splice(tmpS,1);
+        this.SetScheduler();
+        this.SelectedGamePanel.active = false;
+    },
+    OnClearClick(event, customEventData) {
+        Global.GameData.ScheduledGames = [];
+        this.SetScheduler();
+    },
+    //下方游戏列表单元点击
+    OnSelectGameClicked(event, customEventData) {
+        if (this.IsSelectPanelOn) {
+            var action = cc.moveBy(0.3, 0, -300);
+            this.GameListPanel.getChildByName("Mask").active = false;
+            this.GameListPanel.runAction(action);
+            this.IsSelectPanelOn = false;
+            this.SelectGameSwitch.getChildByName("Label").getComponent(cc.Label).string = "选择游戏";
+        }
+        else {
+            var action = cc.moveBy(0.3, 0, 300);
+            this.GameListPanel.getChildByName("Mask").active = true;
+            this.GameListPanel.runAction(action);
+            this.IsSelectPanelOn = true;
+            this.SelectGameSwitch.getChildByName("Label").getComponent(cc.Label).string = "我选好了";
+        }
+    },
+
+    //已安排游戏点击
+    OnScheduledGameClicked(event, customEventData) {
+        this.currentSelectedIndex = Global.GameData.ScheduledGames[customEventData];
+        this.SelectedGamePanel.active = true;
+        cc.find("IconPanel/Icon", this.SelectedGamePanel).getComponent(cc.Sprite).spriteFrame = this.GameIconSprites[this.currentSelectedIndex];
+        cc.find("SelectedGameName", this.SelectedGamePanel).getComponent(cc.Label).string = Global.GameData.AllGames[this.currentSelectedIndex].displayName;
+    },
+
+    OnGameIconClicked(event, customEventData) {
+        cc.log(customEventData);
+        if (this.IsSelectPanelOn) {
+            var tmpIndex = Global.GameData.ScheduledGames.indexOf(customEventData);
+            if (customEventData <= 6) //没完工的游戏先不往上放
+            {
+                if (Global.GameData.ScheduledGames.length < Global.GameData.MaxChooseCount) {//还可以接着选
+                    if (tmpIndex == -1) //原先没有就加
+                    {
+                        Global.GameData.ScheduledGames.push(customEventData);
+                    }
+                    else//原先有就删
+                    {
+                        Global.GameData.ScheduledGames.splice(tmpIndex, 1);
+                    }
+                    this.SetScheduler();
+                }
+            }
+        }
+        else {
+
+        }
+    },
+    OnScheduleStart(event, customEventData) {
+        Global.GameData.TotalGameCount = 3;
+        Global.GameData.IsPlayForFun = false;
+        Global.GameData.ResultArray = [];
+        Global.GameData.LastSceneName = "GameScene" + Global.GameData.ScheduledGames[0].toString();
+        cc.director.loadScene("GameScene" + Global.GameData.ScheduledGames[0].toString());
+    },
+    OnPlayThisClick(event, customEventData) {
+        Global.GameData.TotalGameCount = 7;
+        Global.GameData.IsPlayForFun = true;
+        Global.GameData.ResultArray = [];
+        Global.GameData.LastSceneName = "GameScene" + this.currentSelectedIndex.toString();
+        cc.director.loadScene("GameScene" + this.currentSelectedIndex.toString());
+    },
+
+    OnCloseSelectedPanelButton(event, customEventData) {
+        this.SelectedGamePanel.active = false;
+
+    },
+    // update (dt) {},
+});

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Curling_BG",
+    "texture": "c9ab26c9-0f4e-47a7-aacf-a1779c7187c5",
+    "atlas": "",
+    "rect": [
+      0,
+      102,
+      384,
+      283
+    ],
+    "offset": [
+      0,
+      12.5
+    ],
+    "originalSize": [
+      384,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

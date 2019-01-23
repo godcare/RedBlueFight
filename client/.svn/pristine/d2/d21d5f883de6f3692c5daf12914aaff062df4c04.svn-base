@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "game_icon_14",
+    "texture": "0531e90d-6dcd-498b-afe4-23485af36c26",
+    "atlas": "",
+    "rect": [
+      6,
+      6,
+      117,
+      117
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

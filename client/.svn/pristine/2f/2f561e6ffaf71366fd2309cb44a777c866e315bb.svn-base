@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ShootBasket_TouchArea_2",
+    "texture": "f9ad5bd7-cc27-4613-b91c-4518b9b6fec1",
+    "atlas": "",
+    "rect": [
+      369,
+      0,
+      15,
+      568
+    ],
+    "offset": [
+      184.5,
+      0
+    ],
+    "originalSize": [
+      384,
+      568
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

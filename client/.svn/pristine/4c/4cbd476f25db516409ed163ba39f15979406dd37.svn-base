@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c50cd3a7-a261-4511-8dbb-63179aef3806",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "race_obstacle": {
+      "ver": "1.0.3",
+      "uuid": "ca0d3af1-336b-4d7f-9488-89e60c57d37d",
+      "rawTextureUuid": "c50cd3a7-a261-4511-8dbb-63179aef3806",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 116,
+      "height": 99,
+      "rawWidth": 116,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

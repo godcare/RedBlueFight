@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_hint_start_game_jp",
+    "texture": "a89af210-749a-4a00-a747-3eb5b799f8c0",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      213,
+      70
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      215,
+      71
+    ]
+  }
+}

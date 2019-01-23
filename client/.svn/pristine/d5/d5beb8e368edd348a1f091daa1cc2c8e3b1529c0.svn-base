@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_button_no_ads_disable",
+    "texture": "412ccd5b-293f-4d4d-8252-4322281db80e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      79,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      79,
+      78
+    ]
+  }
+}

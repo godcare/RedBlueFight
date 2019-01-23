@@ -1,0 +1,266 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game2/Game2Control.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'cb47en7eLNNwb3E9GmUNULC', 'Game2Control', __filename);
+// Scripts/Control/Games/Game2/Game2Control.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var blueDragMove = require("Game2DragMoveBlue");
+var redDragMove = require("Game2DragMoveRed");
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        RedPlayer: {
+            default: null,
+            type: cc.Node
+        },
+        BluePlayer: {
+            default: null,
+            type: cc.Node
+        },
+        GameStatus: 0, //0未开始，1开始了，2结束了
+        RedEnemySprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        BlueEnemySprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        AllBlues: {
+            default: [],
+            type: [cc.Node]
+        },
+        AllReds: {
+            default: [],
+            type: [cc.Node]
+        },
+        RedEnemy: {
+            default: null,
+            type: cc.Node
+        },
+        BlueEnemy: {
+            default: null,
+            type: cc.Node
+        },
+        xLimit: 0,
+        yLimit: 0,
+        MaxEnemyCount: 0,
+        RedEnemyCount: 0,
+        BlueEnemyCount: 0
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+    onLoad: function onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+    },
+    update: function update() {
+        var _this = this;
+
+        if (this.GameStatus == 1) {
+            if (this.BlueEnemyCount > 0) {
+                this.AllBlues.forEach(function (element) {
+                    if (element.y <= 30 || element.y >= _this.yLimit || element.x <= -_this.xLimit || element.x >= _this.xLimit) {
+                        element.active = false;
+                        _this.AllBlues.splice(_this.AllBlues.indexOf(element), 1);
+                        _this.destoryEnemy(element);
+                        _this.spawnEnemy(1);
+                    }
+                });
+            }
+            if (this.RedEnemyCount > 0) {
+                this.AllReds.forEach(function (element) {
+                    if (element.y >= -30 || element.y <= -_this.yLimit || element.x <= -_this.xLimit || element.x >= _this.xLimit) {
+                        element.active = false;
+                        _this.AllReds.splice(_this.AllReds.indexOf(element), 1);
+                        _this.destoryEnemy(element);
+                        _this.spawnEnemy(0);
+                    }
+                });
+            }
+        }
+    },
+    start: function start() {
+        this.startAnimation();
+    },
+    startAnimation: function startAnimation() {
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.RedPlayer.getComponent(redDragMove).enabled = true;
+            this.BluePlayer.getComponent(blueDragMove).enabled = true;
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+        }, 3.5);
+        this.schedule(function () {
+            var tmpN = Math.floor(Math.random() * 3);
+            for (var i = 0; i <= tmpN; i++) {
+                this.spawnEnemy(0);
+                this.spawnEnemy(1);
+            }
+        }, 3, 6, 4, true);
+    },
+    BallHit: function BallHit(HitPlayer, HitName) {
+        if (this.GameStatus == 1) {
+            if (HitPlayer == "RedPlayer") {
+                if (HitName == "Red") //红色撞了
+                    {
+                        this.SoundMGR.playOuch();
+                        this.GameStatus = 2;
+                        this.RedPlayer.getComponent(redDragMove).enabled = false;
+                        this.BluePlayer.getComponent(blueDragMove).enabled = false;
+                        var sa = cc.scaleTo(1, 3, 3);
+                        var aa = cc.fadeOut(1);
+                        this.RedPlayer.runAction(sa);
+                        this.RedPlayer.runAction(aa);
+                        this.SoundMGR.playOver();
+                        this.scheduleOnce(function () {
+
+                            Global.GameData.CurrentWinner = 1;
+                            this.GameResultNode.active = true;
+                        }, 1.5);
+                    }
+            } else if (HitPlayer == "BluePlayer") {
+                if (HitName == "Blue") //蓝色撞了
+                    {
+                        this.SoundMGR.playOuch();
+                        this.GameStatus = 2;
+                        this.RedPlayer.getComponent(redDragMove).enabled = false;
+                        this.BluePlayer.getComponent(blueDragMove).enabled = false;
+                        var sa = cc.scaleTo(1, 3, 3);
+                        var aa = cc.fadeOut(1);
+                        this.BluePlayer.runAction(sa);
+                        this.BluePlayer.runAction(aa);
+                        this.SoundMGR.playOver();
+                        this.scheduleOnce(function () {
+
+                            Global.GameData.CurrentWinner = 0;
+                            this.GameResultNode.active = true;
+                        }, 1.5);
+                    }
+            }
+        }
+    },
+
+
+    //eType=0,生成红色敌人,1生成蓝色敌人
+    spawnEnemy: function spawnEnemy(eType) {
+        if (eType == 0) {
+            if (this.RedEnemyCount < this.MaxEnemyCount) {
+                var newObj = cc.instantiate(this.RedEnemy);
+                this.SoundMGR.playPop();
+                cc.log("Math Random");
+                var rs = (Math.random() - 0.5) * 2;
+                var rsy = Math.random() * 0.3 + 0.3;
+                var tmpy = 0;
+                var rss = Math.floor(Math.random() * 6);
+                if (Math.abs(500 * rs) <= 410) {
+                    tmpy = -700;
+                } else {
+                    tmpy = -50 * (Math.random() - 0.5) * 2 - 720;
+                }
+                newObj.active = true;
+                newObj.name = "Red";
+                newObj.setPosition(500 * rs, tmpy, 0);
+                newObj.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2((this.RedPlayer.x - newObj.x) * rsy, (this.RedPlayer.y - newObj.y) * rsy);
+                newObj.getComponent(cc.Sprite).spriteFrame = this.RedEnemySprites[rss];
+                newObj.parent = cc.find("GameCore", this.node);
+
+                this.AllReds.push(newObj);
+                this.RedEnemyCount += 1;
+            }
+        } else {
+            if (this.BlueEnemyCount < this.MaxEnemyCount) {
+                var newObj = cc.instantiate(this.BlueEnemy);
+                this.SoundMGR.playPop();
+                var rs = (Math.random() - 0.5) * 2;
+                var rsy = Math.random() * 0.3 + 0.3;
+                var tmpy = 0;
+                var rss = Math.floor(Math.random() * 6);
+                if (Math.abs(500 * rs) <= 410) {
+                    tmpy = 700;
+                } else {
+                    tmpy = 50 * (Math.random() - 0.5) * 2 + 720;
+                }
+                newObj.active = true;
+                newObj.name = "Blue";
+                newObj.setPosition(500 * rs, tmpy, 0);
+                newObj.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2((this.BluePlayer.x - newObj.x) * rsy, (this.BluePlayer.y - newObj.y) * rsy);
+                newObj.getComponent(cc.Sprite).spriteFrame = this.BlueEnemySprites[rss];
+                newObj.parent = cc.find("GameCore", this.node);
+
+                this.AllBlues.push(newObj);
+                this.BlueEnemyCount += 1;
+            }
+        }
+    },
+    destoryEnemy: function destoryEnemy(targetEnemy) {
+        if (targetEnemy.name == "Blue") {
+            targetEnemy.destroy();
+            this.BlueEnemyCount -= 1;
+        } else {
+            targetEnemy.destroy();
+            this.RedEnemyCount -= 1;
+        }
+    }
+    // update (dt) {},
+
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game2Control.js.map
+        

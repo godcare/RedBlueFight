@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Foul",
+    "texture": "d1ebc6d5-79c3-4164-9aed-1cb53647007b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      145,
+      124
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      145,
+      124
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

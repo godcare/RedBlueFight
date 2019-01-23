@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LightUp_Bottle",
+    "texture": "2b6fe2de-fb6c-4bb9-9cbb-e11fe5858035",
+    "atlas": "",
+    "rect": [
+      0,
+      19,
+      282,
+      353
+    ],
+    "offset": [
+      0,
+      -6
+    ],
+    "originalSize": [
+      282,
+      379
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

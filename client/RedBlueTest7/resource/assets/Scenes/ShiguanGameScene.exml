@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShiguanGameSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="16542ea0531" ></w:Config>
+	<e:Image id="BG" source="Common_BG_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="Bottom0" x="44" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" smoothing="true"/>
+	<e:Image x="117" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom1" smoothing="true"/>
+	<e:Image x="191" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom2" smoothing="true"/>
+	<e:Image x="265" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom3" smoothing="true"/>
+	<e:Image x="338" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom4" smoothing="true"/>
+	<e:Image x="413" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom5" smoothing="true"/>
+	<e:Image x="486" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom6" smoothing="true"/>
+	<e:Image x="560" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom7" smoothing="true"/>
+	<e:Image x="634" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom8" smoothing="true"/>
+	<e:Image x="707" y="730" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" id="Bottom9" smoothing="true"/>
+	<e:Image id="Top0" x="44" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top1" x="117" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top2" x="191" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top3" x="265" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top4" x="338" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top5" x="413" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top6" x="486" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top7" x="560" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top8" x="634" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Top9" x="707" y="600" source="Space_TestTube_png" anchorOffsetX="37" width="74" anchorOffsetY="0" height="570" rotation="180.26" smoothing="true"/>
+	<e:Image id="Shelf1" source="Space_Shelf_png" anchorOffsetX="0" left="-56" right="-61" y="686.52" rotation="180.1"/>
+	<e:Image source="Space_Shelf_png" id="Shelf0" anchorOffsetX="0" left="-58" right="-58" y="648.64"/>
+	<e:Image id="RedLeft" x="41.21" y="1113.12" source="Space_Button_1_0_png" touchEnabled="true" width="128" height="128"/>
+	<e:Image id="RedRight" x="698.84" y="1242.01" source="Space_Button_1_0_png" rotation="180.4" touchEnabled="true" width="128" height="128"/>
+	<e:Image id="BlueLeft" x="43.49" y="96.84" touchEnabled="true" source="Space_Button_2_0_png" width="128" height="128"/>
+	<e:Image id="BlueRight" x="707.4" y="225.73" rotation="180.4" touchEnabled="true" source="Space_Button_2_0_png" width="128" height="128"/>
+	<e:Image id="RedShadow" width="60" height="60" x="265" y="600" source="PushOut_Ball_1_0_png" anchorOffsetX="30" anchorOffsetY="60" rotation="180" alpha="0.5"/>
+	<e:Image id="BlueShadow" width="60" height="60" x="486" y="730" anchorOffsetX="30" anchorOffsetY="60" alpha="0.5" source="PushOut_Ball_2_0_png"/>
+	<e:Group id="RedOver" width="200" height="200" anchorOffsetX="100" anchorOffsetY="100" x="267" y="1450">
+		<e:Image id="RedOverPanel" x="0" y="0" source="box_png" anchorOffsetX="0" scale9Grid="36,36,65,66" width="420" anchorOffsetY="0" height="208" scaleX="1" scaleY="1"/>
+		<e:Image id="RedMenu" source="UI_MainButton_0_png" x="236" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+		<e:Image id="RedRetry" source="UI_StartOverButton_0_png" x="31" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+	</e:Group>
+	<e:Image id="RedBall" width="60" height="60" x="265" y="730" source="PushOut_Ball_1_0_png" anchorOffsetX="30" anchorOffsetY="60" blendMode="normal"/>
+	<e:Group id="BlueOver" width="200" height="200" anchorOffsetX="100" anchorOffsetY="100" x="485" y="-150" rotation="180">
+		<e:Image id="BlueOverPanel" x="0" y="0" source="box_png" anchorOffsetX="0" scale9Grid="36,36,65,66" width="420" anchorOffsetY="0" height="208" scaleX="1" scaleY="1"/>
+		<e:Image id="BlueMenu" source="UI_MainButton_0_png" x="236" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+		<e:Image id="BlueRetry" source="UI_StartOverButton_0_png" x="31" y="25" width="150" height="150" scaleX="1" scaleY="1" touchEnabled="true"/>
+	</e:Group>
+	<e:Image id="BlueBall" width="60" height="60" x="486" y="600" anchorOffsetX="30" anchorOffsetY="60" rotation="180" alpha="1" source="PushOut_Ball_2_0_png" blendMode="normal"/>
+</e:Skin>

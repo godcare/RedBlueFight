@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "34fbb805-8891-4386-93cd-aecafc8d7a54",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "classic_main_button_game_card_set_one": {
+      "ver": "1.0.3",
+      "uuid": "c5c121e2-94dc-4ea3-b133-6f84e76a8f43",
+      "rawTextureUuid": "34fbb805-8891-4386-93cd-aecafc8d7a54",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 56,
+      "height": 51,
+      "rawWidth": 56,
+      "rawHeight": 51,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

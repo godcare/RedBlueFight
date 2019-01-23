@@ -1,0 +1,23 @@
+{
+  "1653ee4744f": {
+    "path": "..\\resource\\assets\\Scenes\\PushGameScene.ts",
+    "class": "PushGameScene",
+    "parentPath": "",
+    "backgroundX": 0,
+    "backgroundY": 0,
+    "backgroundWidth": -1,
+    "backgroundHeight": -1,
+    "useBgImage": true,
+    "useBgColor": true,
+    "backgroundAlpha": 100
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  },
+  "16542ea0531": {
+    "backgroundType": "null",
+    "useBgImage": true,
+    "useBgColor": false,
+    "backgroundImage": "F:\\New Code\\RedBlue\\Client\\RedBlueTest7\\resource\\Images\\Common_BG.png"
+  }
+}

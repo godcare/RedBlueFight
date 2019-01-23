@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_button_setting_selected",
+    "texture": "903f41d3-c2c4-472e-95f8-ca7e8915c6e8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      79,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      79,
+      78
+    ]
+  }
+}

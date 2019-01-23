@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Await_2_1",
+    "texture": "a3631868-1a56-4590-b29d-f48364bdca80",
+    "atlas": "",
+    "rect": [
+      150,
+      6,
+      251,
+      218
+    ],
+    "offset": [
+      50.5,
+      30
+    ],
+    "originalSize": [
+      450,
+      290
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

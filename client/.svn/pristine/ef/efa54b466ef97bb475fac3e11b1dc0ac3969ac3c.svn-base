@@ -1,0 +1,86 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game10/Game10DragMove.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '7f697cR6e1CaqEbjlqAGA9i', 'Game10DragMove', __filename);
+// Scripts/Control/Games/Game10/Game10DragMove.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+            // this.opacity = 255;
+
+            var delta = event.touch.getDelta();
+            if (this.x >= -150 && this.x <= 150) {
+                this.x += delta.x;
+                this.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(delta.x * 5, 0);
+            }
+            if (this.x < -150) {
+                this.x = -150;
+                this.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+            }
+            if (this.x > 150) {
+                this.x = 150;
+                this.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+            }
+            // cc.log("move:" + this.node.name);
+        }, this.node);
+    },
+    update: function update(dt) {
+        if (this.node.x < -150) {
+
+            this.node.x = -150;
+            this.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+        } else if (this.node.x > 150) {
+            this.node.x = 150;
+            this.getComponent(cc.RigidBody).linearVelocity = new cc.Vec2(0, 0);
+        }
+    }
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game10DragMove.js.map
+        

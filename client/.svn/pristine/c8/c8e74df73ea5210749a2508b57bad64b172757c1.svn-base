@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "digits_blue",
+    "texture": "49f1750c-d24c-45fa-8d4b-6b797ba11172",
+    "atlas": "",
+    "rect": [
+      8,
+      1,
+      985,
+      127
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      1000,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

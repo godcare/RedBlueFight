@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Attack_2_2",
+    "texture": "8ff6b0a6-1c0e-4357-bb1f-10e21af54fdc",
+    "atlas": "",
+    "rect": [
+      250,
+      9,
+      200,
+      180
+    ],
+    "offset": [
+      125,
+      46
+    ],
+    "originalSize": [
+      450,
+      290
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

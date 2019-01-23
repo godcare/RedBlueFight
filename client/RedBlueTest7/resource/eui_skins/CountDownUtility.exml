@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CountDownUtilitySkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16542b61923" ></w:Config>
+	<e:Image id="BlueCountDown" y="251.12" source="UI_ReadyNumber_1_3_png" rotation="179.47" smoothing="true" horizontalCenter="-0.5"/>
+	<e:Image id="RedCountDown" y="1042.94" source="UI_ReadyNumber_0_3_png" smoothing="true" horizontalCenter="0"/>
+</e:Skin>

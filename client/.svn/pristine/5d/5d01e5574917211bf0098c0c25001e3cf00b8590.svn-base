@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Action_2_1_cn",
+    "texture": "5ec171f2-10d4-484f-a99c-c0c4c72df3f8",
+    "atlas": "",
+    "rect": [
+      41,
+      3,
+      166,
+      79
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      247,
+      84
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

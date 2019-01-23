@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "flappy_obstacle",
+    "texture": "3bad7d2a-d3b9-47eb-a18a-b9e8b03f1a86",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      64,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

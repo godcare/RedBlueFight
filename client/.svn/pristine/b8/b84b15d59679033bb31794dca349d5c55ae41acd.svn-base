@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "half_pad",
+    "texture": "7485ae45-324f-40fb-b637-4c088ee733b6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      158,
+      154
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      158,
+      154
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

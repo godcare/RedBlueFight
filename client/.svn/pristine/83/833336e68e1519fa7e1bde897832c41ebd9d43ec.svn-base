@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Virus_1_1",
+    "texture": "534014b2-b563-4911-82f6-64073238da58",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      211,
+      211
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      211,
+      211
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "f9ad5bd7-cc27-4613-b91c-4518b9b6fec1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "ShootBasket_TouchArea_2": {
+      "ver": "1.0.3",
+      "uuid": "b0b27911-09b9-4761-b75a-44a85018bb54",
+      "rawTextureUuid": "f9ad5bd7-cc27-4613-b91c-4518b9b6fec1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 184.5,
+      "offsetY": 0,
+      "trimX": 369,
+      "trimY": 0,
+      "width": 15,
+      "height": 568,
+      "rawWidth": 384,
+      "rawHeight": 568,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

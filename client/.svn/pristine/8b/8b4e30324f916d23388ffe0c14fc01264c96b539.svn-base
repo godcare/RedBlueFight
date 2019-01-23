@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "guess_coin_back",
+    "texture": "495cc450-ef24-4483-aa72-3e399ea7b32e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      282,
+      282
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      282,
+      282
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

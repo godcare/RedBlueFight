@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_Parry_1_2",
+    "texture": "4146102c-b9c3-483e-aff4-dfb6ffa28482",
+    "atlas": "",
+    "rect": [
+      3,
+      0,
+      347,
+      258
+    ],
+    "offset": [
+      -50,
+      22.5
+    ],
+    "originalSize": [
+      453,
+      303
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

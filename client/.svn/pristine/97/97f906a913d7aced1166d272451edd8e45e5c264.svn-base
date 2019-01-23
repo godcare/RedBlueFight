@@ -1,0 +1,145 @@
+"use strict";
+cc._RF.push(module, 'd045fHTCy1Hf5cYLFHOeXvH', 'GameData');
+// Scripts/Data/GameData.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var GameType = require("GameType");
+cc.Class({
+    properties: {
+        AllGames: {
+            default: [],
+            type: [GameType]
+        },
+
+        AllGameNames: {
+            default: []
+        },
+        CopHistoryScore: //合作模式历史得分纪录
+        {
+            default: []
+        },
+        LockedGames: //未解锁的游戏
+        {
+            default: []
+        },
+        UnScheduledGames: //所有未选游戏
+        {
+            default: []
+        },
+        ScheduledGames: {
+            default: []
+        },
+        SGame1: {
+            default: []
+        },
+        SGame2: {
+            default: []
+        },
+        SGame3: {
+            default: []
+        },
+        USGame1: {
+            default: []
+        },
+        USGame2: {
+            default: []
+        },
+        USGame3: {
+            default: []
+        },
+        ResultArray: //当轮战果,0为红色胜利，1为蓝色胜利
+        {
+            default: []
+        },
+        CurrentGameType: 1, //当前游戏种类1,2,3
+        CurrentIndex: 0,
+        RedPoint: 0, //红色得分
+        BluePoint: 0, //蓝色得分
+        TotalGameCount: 3, //总共需要玩的局数
+        PlayedGameCount: 0, //已经玩了的局数
+        MaxChooseCount: 7, //最多可以选多少个游戏
+        MaxSchedulerCount: 3, //最多安排多少个游戏
+        MaxFinishedCount: 25, //程序员最多实现了多少款
+        SoundOn: true, //音乐开关
+        SoundFxOn: true, //音效开关
+        SoundVolunm: 1, //音乐音量
+        SoundFxVolunm: 1, //音效音量
+        CurrentWinner: -1, //当前赢家，0为红色，1为蓝色，-1为无
+        IsPlayForFun: false, //是不是随便玩
+        LastSceneName: "", //最近一次玩的场景
+        CurrentCopScore: 0, //当前合作模式得分
+        CurrentCopHistoryScore: 0 //当前合作模式历史最高得分
+
+
+    },
+    name: "GameData",
+    ctor: function ctor() {
+        this.AllGameNames = ["顶翻小胖子", "软蛋曲棍球", "细菌求生存", "试管排排压", "拳王攻防战", "巧夺培养皿", "烧瓶投分王", "超级冰壶赛", "细菌收集机", "金币翻转猜", "快的慢不了", "无敌风火轮", "点变培养皿", "疯狂跳跳菌", "火炮团团灭", "算术大挑战", "快按秒表停", "就按那细菌", "滚滚乐开怀", "疯狂找自我", "紧紧按灭它", "滴管三三消", "胶囊流水线", "赛车大冒险", "冲破细胞壁"];
+        this.AllGames = new Array(this.MaxFinishedCount);
+        this.GetCache();
+
+        for (var i = 0; i < this.MaxFinishedCount; i++) {
+
+            this.AllGames[i] = new GameType();
+            this.AllGames[i].iconName = "game_icon_" + i;
+            this.AllGames[i].displayName = this.AllGameNames[i];
+            this.AllGames[i].sceneName = "GameScene" + i;
+            this.UnScheduledGames.push(i.toString());
+        }
+    },
+
+    GetCache: function GetCache() {
+        cc.log("getting cache");
+        var hScore;
+        var lockStr;
+        if (CC_WECHATGAME) {
+            hScore = wx.getStorageSync("CopHistoryScore");
+            lockStr = wx.getStorageSync("LockedGames");
+        } else {
+            hScore = cc.sys.localStorage.getItem("CopHistoryScore");
+            lockStr = cc.sys.localStorage.getItem("LockedGames");
+        }
+
+        if (hScore == null || hScore == "") {
+            this.CopHistoryScore = [0, 0, 0];
+        } else {
+            this.CopHistoryScore = hScore.toString().split(",");
+        }
+
+        if (lockStr == null || lockStr == "") {
+            this.LockedGames = ["16", "17", "18", "19", "20", "21", "22", "23", "24"];
+        } else {
+            this.LockedGames = lockStr.toString().split(",");
+        }
+        cc.log("getting cache done");
+    },
+    SaveCache: function SaveCache() {
+        if (CC_WECHATGAME) {
+            wx.setStorage({
+                key: "CopHistoryScore",
+                data: this.CopHistoryScore
+            });
+            wx.setStorage({
+                key: "LockedGames",
+                data: this.LockedGames
+            });
+            // wx.setStorageSync("CopHistoryScore", this.CopHistoryScore);
+            // wx.setStorageSync("LockedGames", this.LockedGames);
+        } else {
+            cc.sys.localStorage.setItem("CopHistoryScore", this.CopHistoryScore);
+            cc.sys.localStorage.setItem("LockedGames", this.LockedGames);
+        }
+    }
+});
+
+cc._RF.pop();

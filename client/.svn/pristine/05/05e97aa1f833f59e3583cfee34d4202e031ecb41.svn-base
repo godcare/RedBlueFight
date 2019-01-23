@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ShootBasket_Flask_2",
+    "texture": "990bc26c-7034-409c-bc44-1bab8b4b3ad9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      236,
+      268
+    ],
+    "offset": [
+      0,
+      7.5
+    ],
+    "originalSize": [
+      236,
+      283
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

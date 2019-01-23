@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_button_game_card_set_one",
+    "texture": "34fbb805-8891-4386-93cd-aecafc8d7a54",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      56,
+      51
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      56,
+      51
+    ]
+  }
+}

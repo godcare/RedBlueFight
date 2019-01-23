@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "launch_game_advice",
+    "texture": "4351b875-05e0-424f-83b8-39672a77c534",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      768,
+      45
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      768,
+      45
+    ]
+  }
+}

@@ -1,0 +1,285 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game8/Game8Control.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '37e19Kh+wpDZK1nsEE6rkAP', 'Game8Control', __filename);
+// Scripts/Control/Games/Game8/Game8Control.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+var MoveRepeatBySpeed = require("MoveRepeatBySpeed");
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        Bottle: {
+            default: null,
+            type: cc.Node
+        },
+        RedBlock: {
+            default: null,
+            type: cc.Node
+        },
+        BlueBlock: {
+            default: null,
+            type: cc.Node
+        },
+        UnTouchList: {
+            default: []
+        },
+        bmoveDelta: {
+            default: new cc.Vec2()
+        },
+        rmoveDelta: {
+            default: new cc.Vec2()
+        },
+        RedEnter: {
+            default: null,
+            type: cc.Node
+        },
+        BlueEnter: {
+            default: null,
+            type: cc.Node
+        },
+        redBalls: {
+            default: [],
+            type: [cc.Node]
+        },
+        blueBalls: {
+            default: [],
+            type: [cc.Node]
+        },
+        rsPoints: //red spawn points
+        {
+            default: [],
+            type: [cc.Node]
+        },
+        bsPoints: //blue spawn points
+        {
+            default: [],
+            type: [cc.Node]
+        },
+        redCheckList: [], //red moved balls
+        blueCheckList: [], //blue moved balls
+        redInList: [], //red in bottle
+        blueInList: [], //blue in bottle
+        redIndex: 0,
+        blueIndex: 0,
+        redScore: 0,
+        blueScore: 0,
+        GameStatus: 0 //0未开始，1开始了，2结束了
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad: function onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+    },
+    onTouchStart: function onTouchStart() {
+        this.SoundMGR.playVoice();
+    },
+    start: function start() {
+        this.startAnimation();
+        // cc.log("Untouch List:" + this.UnTouchList);
+        // for (var i = 0; i < this.redBalls.length; i++) {
+        //     this.UnTouchList.push(this.redBalls[i].name);
+        // }
+        // for (var i = 0; i < this.blueBalls.length; i++) {
+        //     this.UnTouchList.push(this.blueBalls[i].name);
+        // }
+    },
+    startAnimation: function startAnimation() {
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+            for (var i = 0; i < this.rsPoints.length; i++) {
+                this.spawBall(0);
+            }
+            for (var i = 0; i < this.bsPoints.length; i++) {
+                this.spawBall(1);
+            }
+            this.Bottle.getComponent(MoveRepeatBySpeed).startMove();
+            this.RedBlock.getComponent(MoveRepeatBySpeed).startMove();
+            this.BlueBlock.getComponent(MoveRepeatBySpeed).startMove();
+            this.RedEnter.getComponent(MoveRepeatBySpeed).startMove();
+            this.BlueEnter.getComponent(MoveRepeatBySpeed).startMove();
+        }, 4.5);
+    },
+
+    // update (dt) {},
+    spawBall: function spawBall(balltype) {
+        if (balltype == 0) //spawn red ball
+            {
+                for (var i = 0; i < this.rsPoints.length; i++) {
+                    if (this.rsPoints[i].getChildren().length == 0) {
+                        this.redIndex += 1;
+                        var newObj = cc.instantiate(this.redBalls[Math.floor(Math.random() * 3)]);
+                        newObj.name = "rn" + this.redIndex.toString();
+                        newObj.setPosition(0, 0);
+                        newObj.parent = this.rsPoints[i];
+                        newObj.active = true;
+                        newObj.setScale(0, 0);
+                        var sa = cc.scaleTo(0.1, 0.7, 0.7);
+                        newObj.runAction(sa);
+                        this.SoundMGR.playBlob();
+                        break;
+                    }
+                }
+            } else {
+            for (var i = 0; i < this.bsPoints.length; i++) {
+                if (this.bsPoints[i].getChildren().length == 0) {
+                    this.blueIndex += 1;
+                    var newObj = cc.instantiate(this.blueBalls[Math.floor(Math.random() * 3)]);
+                    newObj.name = "bn" + this.blueIndex.toString();
+                    newObj.setPosition(0, 0);
+                    newObj.parent = this.bsPoints[i];
+                    newObj.active = true;
+                    newObj.setScale(0, 0);
+                    var sa = cc.scaleTo(0.1, 0.7, 0.7);
+                    newObj.runAction(sa);
+                    this.SoundMGR.playBlob();
+                    break;
+                }
+            }
+        }
+    },
+    onCheckBall: function onCheckBall(childBall, parentBall) {
+        // cc.log(childBall + " " + parentBall);
+        this.scheduleOnce(function () {
+            if (childBall.indexOf("rn") > -1) {
+                //red ball
+                if (this.redInList.indexOf(childBall) > -1) // already in
+                    {
+                        this.spawBall(0);
+                    } else {
+                    if (cc.find("Canvas/GameCore/" + parentBall + "/" + childBall).y >= 65) {
+                        if (cc.find("Canvas/GameCore/" + parentBall + "/" + childBall) != null) {
+                            cc.find("Canvas/GameCore/" + parentBall + "/" + childBall).destroy();
+                        }
+                        this.scheduleOnce(function () {
+                            this.spawBall(0);
+                        }, 0.1);
+                    } else {
+                        this.redCheckList.splice(this.redCheckList.indexOf(childBall), 1);
+                    }
+                }
+            }
+            if (childBall.indexOf("bn") > -1) {
+                //blue ball
+                if (this.blueInList.indexOf(childBall) > -1) // already in
+                    {
+                        this.spawBall(1);
+                    } else {
+                    if (cc.find("Canvas/GameCore/" + parentBall + "/" + childBall).y <= -65) {
+
+                        if (cc.find("Canvas/GameCore/" + parentBall + "/" + childBall) != null) {
+                            cc.find("Canvas/GameCore/" + parentBall + "/" + childBall).destroy();
+                        }
+                        this.scheduleOnce(function () {
+                            this.spawBall(1);
+                        }, 0.1);
+                    } else {
+                        this.blueCheckList.splice(this.blueCheckList.indexOf(childBall), 1);
+                    }
+                }
+            }
+        }, 3);
+    },
+    onBallHit: function onBallHit(selfName, otherName, selfParent) {
+        cc.log("selft:" + selfName + " other:" + otherName + " selfParent:" + selfParent);
+        if (otherName == "RedEnter" && selfName.indexOf("rn") > -1) {
+            if (this.redInList.indexOf(selfName) == -1) {
+                this.redInList.push(selfName);
+                this.redScore += 1;
+                cc.find("Canvas/GameCore/" + selfParent + "/" + selfName).parent = cc.find("Canvas/GameCore/In");
+                if (this.redScore == 3 && this.GameStatus == 1) {
+                    this.SoundMGR.playOver();
+                    this.Bottle.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.RedBlock.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.BlueBlock.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.RedEnter.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.BlueEnter.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.scheduleOnce(function () {
+                        this.GameStatus = 2;
+                        Global.GameData.CurrentWinner = 0;
+                        this.GameResultNode.active = true;
+                    }, 2);
+                }
+            }
+        } else if (otherName == "BlueEnter" && selfName.indexOf("bn") > -1) {
+            if (this.blueInList.indexOf(selfName) == -1) {
+                this.blueInList.push(selfName);
+                this.blueScore += 1;
+                if (this.blueScore == 3 && this.GameStatus == 1) {
+                    this.SoundMGR.playOver();
+                    this.Bottle.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.RedBlock.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.BlueBlock.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.RedEnter.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.BlueEnter.getComponent(MoveRepeatBySpeed).stopMove();
+                    this.scheduleOnce(function () {
+                        this.GameStatus = 2;
+                        Global.GameData.CurrentWinner = 1;
+                        this.GameResultNode.active = true;
+                    }, 2);
+                }
+                cc.find("Canvas/GameCore/" + selfParent + "/" + selfName).parent = cc.find("Canvas/GameCore/In");
+            }
+        }
+    }
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game8Control.js.map
+        

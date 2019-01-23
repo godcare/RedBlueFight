@@ -1,0 +1,94 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Common/Splash.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'b099fm2OnRLwK4VNZeiGHd9', 'Splash', __filename);
+// Scripts/Control/Games/Common/Splash.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    onLoad: function onLoad() {
+        if (!(cc.sys.platform === cc.sys.WECHAT_GAME)) {
+            cc.director.loadScene("Loading");
+        } else {
+            if (wx.getUpdateManager) {
+                //微信6.6.7才支持此接口
+                var updateManager = wx.getUpdateManager();
+                // 检查更新
+                updateManager.onCheckForUpdate(function (res) {
+                    console.log("热更新接口返回：", res);
+                    if (res.hasUpdate == false) {
+                        // 没有更新
+                        cc.director.loadScene("Loading");
+                    }
+                });
+                // 下载更新完成
+                updateManager.onUpdateReady(function (res) {
+                    wx.showModal({
+                        title: '更新提示',
+                        content: '新版本已经准备好，是否重启应用？',
+                        success: function success(res) {
+                            if (res.confirm) {
+                                // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+                                updateManager.applyUpdate();
+                            }
+                        }
+
+                    });
+                });
+            } else {
+                //低版本时直接进入
+
+                cc.director.loadScene("Loading");
+            }
+        }
+    },
+    start: function start() {}
+}
+
+// update (dt) {},
+);
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Splash.js.map
+        

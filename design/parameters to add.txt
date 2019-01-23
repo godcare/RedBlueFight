@@ -1,0 +1,9 @@
+online server:
+https://iph5game.flipscript.com.cn/VirusVsVirus2_WeChat_Res
+test server:
+http://game.youthgamer.com:86/ClientResources/redblue
+
+nav list:
+ "navigateToMiniProgramAppIdList": [
+        "wx547cd239ca4dc032"
+      ]

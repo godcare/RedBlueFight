@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_card_set_three_background",
+    "texture": "4f990a4d-702d-48b1-b252-b776b3e432c0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      543,
+      418
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      543,
+      418
+    ],
+    "capInsets": [
+      45,
+      110,
+      260,
+      45
+    ]
+  }
+}

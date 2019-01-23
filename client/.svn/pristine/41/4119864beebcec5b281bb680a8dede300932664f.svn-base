@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_round_background",
+    "texture": "9b64ab2e-1fe5-4f46-809e-20ae88e65a2b",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      428,
+      153
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      428,
+      153
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

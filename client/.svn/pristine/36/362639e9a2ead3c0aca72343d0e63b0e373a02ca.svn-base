@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_clear_prompt_button_selected",
+    "texture": "4290c914-6647-430e-9f48-24b67bc45c59",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      160,
+      67
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      160,
+      67
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

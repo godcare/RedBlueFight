@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Glow_1_0",
+    "texture": "0124d852-0c76-4f83-b772-c018dca61626",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      239,
+      239
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      244,
+      244
+    ]
+  }
+}

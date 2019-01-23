@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_card_set_one_background",
+    "texture": "ee5dc90f-c419-4f31-8679-51928bbb2d26",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      543,
+      418
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      543,
+      418
+    ]
+  }
+}

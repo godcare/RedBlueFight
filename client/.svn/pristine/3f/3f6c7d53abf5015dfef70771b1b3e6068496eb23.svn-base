@@ -1,0 +1,148 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/MainMenu/MainMenuControl.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '40903ucvJZCSLCq6Z0WeaaQ', 'MainMenuControl', __filename);
+// Scripts/Control/MainMenu/MainMenuControl.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        GameIcons: {
+            default: [],
+            type: [cc.Node]
+
+        },
+        IsSelectPanelOn: {
+            default: false
+        },
+        SelectGameSwitch: {
+            default: null,
+            type: cc.Node
+        },
+        GameListPanel: {
+            default: null,
+            type: cc.Node
+        },
+        ScheduleGameParent: {
+            default: null,
+            type: cc.Node
+        }
+
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        this.InitData();
+    },
+
+
+    InitData: function InitData() {
+        //初始化游戏图标
+        for (var i = 0; i < 8; i++) {
+            this.GameIcons[i].getChildByName("Name").getComponent(cc.Label).string = Global.GameData.AllGames[i].displayName;
+        }
+    },
+
+    //设置排上日程的游戏列表
+    SetScheduler: function SetScheduler() {
+        cc.log("Setting Scheduler");
+        for (var i = 0; i < Global.GameData.ScheduledGames.length; i++) {
+            //设置底部游戏列表
+            cc.find("List/" + i.toString() + "/Mark", this.GameListPanel).active = true;
+            cc.find("List/" + i.toString() + "/Name", this.GameListPanel).getComponent(cc.Label).color = new cc.color(255, 255, 255, 255);
+            // this.GameListPanel.getChildByName("List").getChildByName(i).getChildByName("Mark").active = true;
+            // this.GameListPanel.getChildByName("List").getChildByName(i).getChildByName("Name").getComponent(cc.Label).color = new cc.color(255, 255, 255, 255);
+            var tmpIcon = cc.find("List/" + i.toString() + "/Icon", this.GameListPanel).getComponent(cc.SpriteFrame);
+            //设置中部游戏日程表
+            cc.find(i.toString() + "/Icon", this.ScheduleGameParent).active = true;
+            cc.find(i.toString() + "/Name", this.ScheduleGameParent).active = true;
+            // this.ScheduleGameParent.getChildByName(i).getChildByName("Icon").active = true;
+            // this.ScheduleGameParent.getChildByName(i).getChildByName("Name").active = true;
+            cc.find(i.toString() + "/Name", this.ScheduleGameParent).getComponent(cc.Label).string = Global.GameData.AllGames[Global.GameData.ScheduledGames[i]].displayName;
+            cc.find(i.toString() + "/Icon", this.ScheduleGameParent).getComponent(cc.Sprite).SpriteFrame = tmpIcon;
+        }
+    },
+    //下方游戏列表单元点击
+    OnSelectGameClicked: function OnSelectGameClicked(event, customEventData) {
+        if (this.IsSelectPanelOn) {
+            var action = cc.moveBy(0.3, 0, -300);
+            this.GameListPanel.getChildByName("Mask").active = false;
+            this.GameListPanel.runAction(action);
+            this.IsSelectPanelOn = false;
+            this.SelectGameSwitch.getChildByName("Label").getComponent(cc.Label).string = "选择游戏";
+        } else {
+            var action = cc.moveBy(0.3, 0, 300);
+            this.GameListPanel.getChildByName("Mask").active = true;
+            this.GameListPanel.runAction(action);
+            this.IsSelectPanelOn = true;
+            this.SelectGameSwitch.getChildByName("Label").getComponent(cc.Label).string = "我选好了";
+        }
+    },
+
+
+    //已安排游戏点击
+    OnScheduledGameClicked: function OnScheduledGameClicked(event, customEventData) {},
+    OnGameIconClicked: function OnGameIconClicked(event, customEventData) {
+        cc.log(customEventData);
+        if (this.IsSelectPanelOn) {
+            var tmpIndex = Global.GameData.ScheduledGames.indexOf(customEventData);
+            cc.log(tmpIndex);
+            if (Global.GameData.ScheduledGames.length < Global.GameData.MaxChooseCount) {
+                //还可以接着选
+                if (tmpIndex == -1) //原先没有就加
+                    {
+                        Global.GameData.ScheduledGames.push(customEventData);
+                    } else //原先有就删
+                    {
+                        Global.GameData.ScheduledGames.splice(tmpIndex, 1);
+                    }
+                this.SetScheduler();
+            }
+        } else {}
+    }
+}
+// update (dt) {},
+);
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=MainMenuControl.js.map
+        

@@ -1,0 +1,187 @@
+2018-10-18T03:51:11.578Z - normal: Load ~/.CocosCreator/settings.json
+2018-10-18T03:51:11.585Z - normal: checking language setting...
+2018-10-18T03:51:11.585Z - normal: Language: zh
+2018-10-18T03:51:13.501Z - success: protocol editor-framework registered
+2018-10-18T03:51:13.501Z - success: protocol app registered
+2018-10-18T03:51:13.501Z - success: protocol theme registered
+2018-10-18T03:51:13.501Z - success: protocol packages registered
+2018-10-18T03:51:13.501Z - success: protocol unpack registerred
+2018-10-18T03:51:13.501Z - success: protocol disable-commonjs registerred
+2018-10-18T03:51:13.691Z - normal: connected!
+2018-10-18T03:51:13.697Z - normal: Check project E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight
+2018-10-18T03:51:13.713Z - normal: Initializing project E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight
+2018-10-18T03:51:13.751Z - normal: Initializing Cocos2d
+2018-10-18T03:51:14.971Z - normal: Initializing Asset Database
+2018-10-18T03:51:15.045Z - success: protocol uuid registerred
+2018-10-18T03:51:15.045Z - success: protocol db registerred
+2018-10-18T03:51:15.045Z - success: protocol thumbnail registerred
+2018-10-18T03:51:15.045Z - normal: Loading editor/builtin packages
+2018-10-18T03:51:15.256Z - success: assets loaded
+2018-10-18T03:51:15.259Z - success: builder loaded
+2018-10-18T03:51:15.263Z - success: cocos-analytics loaded
+2018-10-18T03:51:15.268Z - success: console loaded
+2018-10-18T03:51:15.310Z - success: fb-instant-games loaded
+2018-10-18T03:51:15.318Z - success: hierarchy loaded
+2018-10-18T03:51:15.322Z - success: inspector loaded
+2018-10-18T03:51:15.323Z - success: keystore loaded
+2018-10-18T03:51:15.330Z - success: node-library loaded
+2018-10-18T03:51:15.332Z - success: package-asset loaded
+2018-10-18T03:51:15.333Z - success: preferences loaded
+2018-10-18T03:51:15.335Z - success: project-exporter loaded
+2018-10-18T03:51:15.360Z - success: project-importer loaded
+2018-10-18T03:51:15.363Z - success: project-settings loaded
+2018-10-18T03:51:15.370Z - success: ui-kit loaded
+2018-10-18T03:51:15.375Z - success: scene loaded
+2018-10-18T03:51:15.377Z - success: sprite-editor loaded
+2018-10-18T03:51:15.382Z - success: store loaded
+2018-10-18T03:51:15.387Z - success: timeline loaded
+2018-10-18T03:51:15.387Z - normal: Loading builtin packages
+2018-10-18T03:51:15.406Z - success: asset-db-debugger loaded
+2018-10-18T03:51:15.412Z - success: code-editor loaded
+2018-10-18T03:51:15.414Z - success: color-picker loaded
+2018-10-18T03:51:15.416Z - success: jsb-adapter loaded
+2018-10-18T03:51:15.425Z - success: package-manager loaded
+2018-10-18T03:51:15.594Z - success: qqplay-adapter loaded
+2018-10-18T03:51:15.605Z - success: sdkbox loaded
+2018-10-18T03:51:15.616Z - success: tester loaded
+2018-10-18T03:51:15.623Z - success: ui-grid loaded
+2018-10-18T03:51:15.629Z - success: ui-kit-preview-extra loaded
+2018-10-18T03:51:15.635Z - success: ui-kit-preview loaded
+2018-10-18T03:51:15.641Z - success: ui-tree loaded
+2018-10-18T03:51:15.643Z - success: weapp-adapter loaded
+2018-10-18T03:51:17.665Z - normal: Loading packages
+2018-10-18T03:51:17.681Z - normal: Watching packages
+2018-10-18T03:51:18.909Z - normal: Run Application
+2018-10-18T03:51:25.927Z - success: preview server running at http://localhost:7456
+2018-10-18T03:52:36.016Z - normal: Start building with options : {
+  "actualPlatform": "wechatgame",
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\NewCode\\RedBlue\\Client\\RedBlueFight\\RedBlueFight\\build",
+  "debug": false,
+  "dest": "E:\\NewCode\\RedBlue\\Client\\RedBlueFight\\RedBlueFight\\build\\wechatgame",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [
+    "5e645802-d7ea-4bdf-80fb-de33cf7d1424",
+    "4f45cbf2-0e0f-49dd-a50e-1fd00fea405c"
+  ],
+  "excludedModules": [
+    "Renderer Texture",
+    "Dynamic Atlas",
+    "LabelOutline",
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "Widget",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "NodePool",
+    "StudioComponent",
+    "Intersection",
+    "Native NetWork"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.RedBlueFight",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "dae3428a-7b57-4f43-98b5-a764dd01f927",
+    "d2c7a397-274c-4ff1-baf8-574e809a65d5",
+    "de8b83ae-0a91-44f3-b20a-b3472391fcb4",
+    "d9092af5-1edc-4c6d-9de9-2fdd04d5aee8",
+    "c7a61ce8-0b91-4b3e-84ac-b04c597ddebf",
+    "96d639c7-12be-41b1-a99f-916da6c2142c",
+    "361a51d2-5818-4a35-a1ff-54761e1808ba",
+    "04d5351a-c3ae-43a7-9b07-1057853613db",
+    "1a389f5b-50ec-48ae-8fed-42baed5e3fe7",
+    "1ab7cb57-20a8-466a-ba2d-ba7c718df066",
+    "6d4a6af6-2fa9-42b7-a6f9-ebe9a9af080e"
+  ],
+  "sourceMaps": false,
+  "startScene": "dae3428a-7b57-4f43-98b5-a764dd01f927",
+  "template": "link",
+  "title": "RedBlueFight",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxbb5eb3eb1caf5c2a",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "af4af19f-2292-41",
+  "zipCompressJs": true,
+  "project": "E:\\NewCode\\RedBlue\\Client\\RedBlueFight\\RedBlueFight",
+  "projectName": "RedBlueFight",
+  "debugBuildWorker": false
+}
+2018-10-18T03:52:36.019Z - normal: Building E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight
+2018-10-18T03:52:36.019Z - normal: Destination E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight\build\wechatgame
+2018-10-18T03:52:38.441Z - normal: Delete E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight\build\wechatgame\**\*
+2018-10-18T03:53:27.105Z - normal: Start building assets
+2018-10-18T03:53:27.106Z - normal: Start spawn build-worker
+2018-10-18T03:53:28.221Z - normal: Finish spawn build-worker
+2018-10-18T03:53:28.221Z - normal: Start init build-worker
+2018-10-18T03:53:34.082Z - normal: Finish init build-worker
+2018-10-18T03:53:34.082Z - normal: Start build-assets in worker
+2018-10-18T03:53:38.376Z - normal: Finish build-assets in worker
+2018-10-18T03:53:38.383Z - normal: Finish building assets
+2018-10-18T03:53:38.807Z - normal: Start building plugin scripts
+2018-10-18T03:53:38.845Z - normal: Generating main.js from F:\Cocos Creator 202\CocosCreator\resources\static\build-templates\shares\main.js
+2018-10-18T03:53:40.830Z - normal: Built to "E:\NewCode\RedBlue\Client\RedBlueFight\RedBlueFight\build\wechatgame" successfully
+2018-10-18T03:54:16.659Z - error: 请在 [偏好设置 -> 原生开发环境] 中设置微信开发者工具路径。
+    at Object.run (F:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\wechat-game.js:1:368)
+    at EventEmitter.r.on (F:\Cocos Creator 202\CocosCreator\resources\app.asar\editor\core\ipc\app-ipc.js:1:1055)
+    at emitTwo (events.js:106:13)
+    at EventEmitter.emit (events.js:194:7)
+    at WebContents.<anonymous> (F:\Cocos Creator 202\CocosCreator\resources\electron.asar\browser\api\web-contents.js:247:13)
+    at emitTwo (events.js:106:13)
+    at WebContents.emit (events.js:194:7)
+2018-10-18T03:55:55.773Z - normal: Initializing...
+
+2018-10-18T03:55:55.779Z - normal: idePortFile: C:\Users\fabul\AppData\Local\微信web开发者工具\User Data\Default\.ide
+
+2018-10-18T03:55:55.814Z - normal: IDE server has started, listening on http://127.0.0.1:55238
+initialization finished
+
+2018-10-18T03:55:56.294Z - normal: open IDE success
+
+2018-10-18T03:58:07.396Z - info: shutdown preview server

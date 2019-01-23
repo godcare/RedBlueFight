@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_popup_button_remove_selected",
+    "texture": "d704cbf4-6cb6-46a4-b3e4-f6cad85d1903",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      128,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      76
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "e163151e-b4c3-4149-b5e6-fd686a7dd174",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "MusicalChairs_Stool": {
+      "ver": "1.0.3",
+      "uuid": "a72ca1e4-443b-4089-90d7-75b445d29eba",
+      "rawTextureUuid": "e163151e-b4c3-4149-b5e6-fd686a7dd174",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3.5,
+      "offsetY": -0.5,
+      "trimX": 3,
+      "trimY": 9,
+      "width": 121,
+      "height": 117,
+      "rawWidth": 134,
+      "rawHeight": 134,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

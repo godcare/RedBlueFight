@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Boxing_DefendButton_2_0",
+    "texture": "f0652ebd-0c80-4433-badc-e434e4cb1a37",
+    "atlas": "",
+    "rect": [
+      2,
+      1,
+      129,
+      130
+    ],
+    "offset": [
+      0.5,
+      0
+    ],
+    "originalSize": [
+      132,
+      132
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

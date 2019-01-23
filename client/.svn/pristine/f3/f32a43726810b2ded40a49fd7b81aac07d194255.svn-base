@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_game_popup_bg",
+    "texture": "3481da2c-b2f3-4ea5-9db6-27ff19749f5f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      454,
+      595
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      454,
+      595
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "18714c84-e0b5-4f8e-83cd-3bc63c70f807",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "ShootBasket_Glass_Blue": {
+      "ver": "1.0.3",
+      "uuid": "75de89bc-738d-49ab-ae8a-aaa04d74a009",
+      "rawTextureUuid": "18714c84-e0b5-4f8e-83cd-3bc63c70f807",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -174.5,
+      "trimX": 0,
+      "trimY": 349,
+      "width": 768,
+      "height": 163,
+      "rawWidth": 768,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

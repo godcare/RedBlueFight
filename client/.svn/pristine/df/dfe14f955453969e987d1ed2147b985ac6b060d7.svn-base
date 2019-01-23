@@ -1,0 +1,205 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Game16/Game16Control.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '17e73zRIn9Fx7y+YYV7rfNp', 'Game16Control', __filename);
+// Scripts/Control/Games/Game16/Game16Control.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+var SoundManager = require("SoundManager");
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        SoundMGR: {
+            default: null,
+            type: SoundManager
+        },
+        GameResultNode: {
+            default: null,
+            type: cc.Node
+        },
+        CountDownNode: {
+            default: null,
+            type: cc.Node
+        },
+        PauseNode: {
+            default: null,
+            type: cc.Node
+        },
+        GameStatus: 0, //0未开始，1开始了，2结束了
+        CountDownLabel: {
+            default: null,
+            type: cc.Label
+        },
+        ClockObj: {
+            default: null,
+            type: cc.Node
+        },
+        RedBalls: {
+            default: [],
+            type: [cc.Node]
+        },
+        BlueBalls: {
+            default: [],
+            type: [cc.Node]
+        },
+        redSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        blueSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        redBallSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        blueBallSprites: {
+            default: [],
+            type: [cc.SpriteFrame]
+        },
+        randomListRed: [],
+        randomListBlue: [],
+        playStatus: -1, //正在打的状态，0为红，1为蓝，2为旋转中,-1为刚开局的待定
+        countDownSeconds: 10, //倒计时
+        tmpTimer: 0,
+        redFlag: 0,
+        blueFlag: 0
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        this.startAnimation();
+        // cc.log(this.Coin.scaleX);
+    },
+    startAnimation: function startAnimation() {
+
+        this.scheduleOnce(function () {
+            this.CountDownNode.active = true;
+        }, 0.5);
+        this.scheduleOnce(function () {
+            this.GameStatus = 1;
+            this.PauseNode.active = true;
+            this.generateList(0);
+            this.generateList(1);
+            this.showList(0);
+            this.showList(1);
+        }, 4.5);
+    },
+    onClickBall: function onClickBall(event, customEventData) {
+        if (customEventData.indexOf("r") != -1) {
+            //red click
+            var clickIndex = customEventData.substr(1, 1);
+            if (this.playStatus == -1 || this.playStatus == 0) {
+                if (this.redFlag == this.randomListRed[clickIndex - 1] - 1) {
+                    this.redFlag += 1;
+                    cc.find("Canvas/GameCore/" + customEventData + "/ball", this.Node).getComponent(cc.Sprite).spriteFrame = this.redBallSprites[1];
+                    if (this.redFlag >= 4) {
+                        this.HideBalls(0);
+                        this.redFlag = 0;
+                    }
+                }
+            }
+        } else if (customEventData.indexOf("b") != -1) {
+            //blue click
+            var clickIndex = customEventData.substr(1, 1);
+            if (this.playStatus == -1 || this.playStatus == 1) {
+                if (this.blueFlag == this.randomListBlue[clickIndex - 1] - 1) {
+                    this.blueFlag += 1;
+                    cc.find("Canvas/GameCore/" + customEventData + "/ball", this.Node).getComponent(cc.Sprite).spriteFrame = this.blueBallSprites[1];
+                }
+            }
+        }
+    },
+    HideBalls: function HideBalls(colorIndex) {
+        if (colorIndex == 0) //red
+            {
+                for (var i = 0; i < 4; i++) {
+                    var ra = cc.rotateBy(0.5, 720);
+                    var ma = cc.moveTo(0.5, this.RedBalls[i].x, 350);
+                    var sa = cc.scaleTo(0.5, 0, 0);
+                    this.RedBalls[i].runAction(ra);
+                    this.RedBalls[i].runAction(sa);
+                    this.RedBalls[i].runAction(ma);
+                }
+            } else {}
+    },
+    showList: function showList(colorIndex) {
+        if (colorIndex == 0) //red
+            {
+                // cc.log(this.randomListRed);
+                for (var i = 0; i < 4; i++) {
+                    cc.find("index", this.RedBalls[i]).getComponent(cc.Sprite).spriteFrame = this.redSprites[this.randomListRed[i] - 1];
+                    cc.find("index", this.RedBalls[i]).opacity = 0;
+                    cc.find("index", this.RedBalls[i]).active = true;
+                    this.RedBalls[i].getComponent(cc.Button).enabled = true;
+                    cc.find("ball", this.RedBalls[i]).getComponent(cc.Sprite).spriteFrame = this.redBallSprites[0];
+                    var aa = cc.fadeTo(0.3, 255);
+                    cc.find("index", this.RedBalls[i]).runAction(aa);
+                }
+            } else {
+            for (var i = 0; i < 4; i++) {
+                cc.find("index", this.BlueBalls[i]).getComponent(cc.Sprite).spriteFrame = this.blueSprites[this.randomListBlue[i] - 1];
+                cc.find("index", this.BlueBalls[i]).opacity = 0;
+                cc.find("index", this.BlueBalls[i]).active = true;
+                this.BlueBalls[i].getComponent(cc.Button).enabled = true;
+                cc.find("ball", this.BlueBalls[i]).getComponent(cc.Sprite).spriteFrame = this.blueBallSprites[0];
+                var aa = cc.fadeTo(0.3, 255);
+                cc.find("index", this.BlueBalls[i]).runAction(aa);
+            }
+        }
+    },
+    generateList: function generateList(colorIndex) {
+
+        if (colorIndex == 0) //red
+            {
+                var tmpListr = [1, 2, 3, 4];
+                this.randomListRed = [];
+                for (var i = 0; i < 4; i++) {
+                    var tr = Math.floor(Math.random() * tmpListr.length);
+                    var ti = tmpListr[tr];
+                    this.randomListRed.push(ti.toString());
+                    tmpListr.splice(tr, 1);
+                }
+            } else {
+            var tmpListb = [1, 2, 3, 4];
+            this.randomListBlue = [];
+            for (var i = 0; i < 4; i++) {
+                var tr = Math.floor(Math.random() * tmpListb.length);
+                var ti = tmpListb[tr];
+                this.randomListBlue.push(ti.toString());
+                tmpListb.splice(tr, 1);
+            }
+        }
+    }
+}
+
+// update (dt) {},
+);
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=Game16Control.js.map
+        

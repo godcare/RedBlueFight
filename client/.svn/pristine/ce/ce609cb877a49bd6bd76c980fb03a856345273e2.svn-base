@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "perforation",
+    "texture": "a166c8a0-78a3-4aca-9e84-93c1a66ba63e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      178,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      178,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

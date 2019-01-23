@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Space_Shelf",
+    "texture": "d36c8733-c29d-4e53-baa0-423920b1b339",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      751,
+      419
+    ],
+    "offset": [
+      0.5,
+      1
+    ],
+    "originalSize": [
+      752,
+      421
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+"use strict";
+cc._RF.push(module, 'b8e11x//ZpBnpL97cxdEhPJ', 'MoveRepeat');
+// Scripts/Control/Games/Common/MoveRepeat.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        xFrom: 0,
+        xTo: 0,
+        yFrom: 0,
+        yTo: 0,
+        interval: 1,
+        dFlag: 1
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        // this.moveStart();
+    },
+    moveStart: function moveStart() {
+        this.unscheduleAllCallbacks();
+        this.schedule(function () {
+            if (this.dFlag == 1) {
+                this.x = this.xFrom;
+                this.y = this.yFrom;
+                var aa = cc.moveTo(this.interval, new cc.Vec2(this.xTo, this.yTo));
+                this.node.runAction(aa);
+            } else {
+                this.x = this.xTo;
+                this.y = this.yTo;
+                var aa = cc.moveTo(this.interval, new cc.Vec2(this.xFrom, this.yFrom));
+                this.node.runAction(aa);
+            }
+            this.dFlag *= -1;
+        }, this.interval);
+    }
+}
+// update (dt) {},
+);
+
+cc._RF.pop();

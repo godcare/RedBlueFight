@@ -1,0 +1,181 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/Control/Games/Common/SoundManager.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '68467wYe55Khoegr+mDg5Zr', 'SoundManager', __filename);
+// Scripts/Control/Games/Common/SoundManager.js
+
+"use strict";
+
+// Learn cc.Class:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/class.html
+// Learn Attribute:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+        titleBGM: {
+            default: null,
+            type: cc.AudioClip
+        },
+        gameBGM: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxPush: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxTick: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxGameOver: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxRebounce: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxRebounce2: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxPop: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxOuch: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxShake: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxFart: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxPush2: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxPunch: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxFoul: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxBlob: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxVoice: {
+            default: null,
+            type: cc.AudioClip
+        },
+        fxScore: {
+            default: null,
+            type: cc.AudioClip
+        }
+    },
+
+    // LIFE-CYCLE CALLBACKS:
+
+    // onLoad () {},
+
+    start: function start() {
+        // this.playTitleBGM("Sound/BGM/bgm_title");
+    },
+    playTitleBGM: function playTitleBGM() {
+        cc.audioEngine.playMusic(this.titleBGM, true);
+    },
+    playGameBGM: function playGameBGM() {
+        cc.audioEngine.playMusic(this.gameBGM, true);
+    },
+    playShake: function playShake() {
+        cc.audioEngine.playEffect(this.fxShake, false);
+    },
+    playBlob: function playBlob() {
+        cc.audioEngine.playEffect(this.fxBlob, false);
+    },
+    playVoice: function playVoice() {
+        cc.audioEngine.playEffect(this.fxVoice, false);
+    },
+    playScore: function playScore() {
+        cc.audioEngine.playEffect(this.fxScore, false);
+    },
+    playPush2: function playPush2() {
+        cc.audioEngine.playEffect(this.fxPush2, false);
+    },
+    playFart: function playFart() {
+        cc.audioEngine.playEffect(this.fxFart, false);
+    },
+    playPunch: function playPunch() {
+        cc.audioEngine.playEffect(this.fxPunch, false);
+    },
+    playFoul: function playFoul() {
+        cc.audioEngine.playEffect(this.fxFoul, false);
+    },
+    playPop: function playPop() {
+        cc.audioEngine.playEffect(this.fxPop, false);
+    },
+    playOuch: function playOuch() {
+        cc.audioEngine.playEffect(this.fxOuch, false);
+    },
+    playPush: function playPush() {
+        cc.audioEngine.playEffect(this.fxPush, false);
+    },
+    playTick: function playTick() {
+        cc.audioEngine.playEffect(this.fxTick, false);
+    },
+    playOver: function playOver() {
+        cc.audioEngine.playEffect(this.fxGameOver, false);
+    },
+    playRebounce: function playRebounce() {
+        cc.audioEngine.playEffect(this.fxRebounce, false);
+    },
+    playRebounce2: function playRebounce2() {
+        cc.audioEngine.playEffect(this.fxRebounce2, false);
+    }
+}
+
+// update (dt) {},
+);
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=SoundManager.js.map
+        

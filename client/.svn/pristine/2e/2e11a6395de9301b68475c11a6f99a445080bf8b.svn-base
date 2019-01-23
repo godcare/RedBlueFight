@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "petri_dish",
+    "texture": "425845cf-6771-41b8-9585-8276751fa454",
+    "atlas": "",
+    "rect": [
+      13,
+      17,
+      144,
+      152
+    ],
+    "offset": [
+      0.5,
+      -8.5
+    ],
+    "originalSize": [
+      169,
+      169
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "capsule_red",
+    "texture": "41d1d41c-3c93-4d4a-ac18-346b9880f4b8",
+    "atlas": "",
+    "rect": [
+      0,
+      25,
+      108,
+      125
+    ],
+    "offset": [
+      0,
+      -12.5
+    ],
+    "originalSize": [
+      108,
+      150
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Draw_Dot_0",
+    "texture": "7f092c55-44d8-49d8-b8d5-76d11154528b",
+    "atlas": "",
+    "rect": [
+      9,
+      9,
+      96,
+      95
+    ],
+    "offset": [
+      -1,
+      1.5
+    ],
+    "originalSize": [
+      116,
+      116
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

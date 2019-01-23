@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "classic_main_setting_button_music_off",
+    "texture": "63ee7255-a7dc-4141-a4b8-9166b8d0ff06",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      137,
+      137
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      138,
+      138
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

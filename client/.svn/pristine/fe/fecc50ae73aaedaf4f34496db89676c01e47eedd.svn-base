@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "UI_ReadyNumber_0_2",
+    "texture": "7b977561-ca09-4728-a1f8-9a07950bc332",
+    "atlas": "",
+    "rect": [
+      36,
+      1,
+      52,
+      76
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      124,
+      78
+    ]
+  }
+}

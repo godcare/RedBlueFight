@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GameOver_Best",
+    "texture": "2dac16de-d7ed-4e8d-aedd-864051c9c2d1",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      119,
+      43
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      120,
+      44
+    ]
+  }
+}
